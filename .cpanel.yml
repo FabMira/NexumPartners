@@ -7,3 +7,8 @@ deployment:
     - /bin/cp contacto.html $DEPLOYPATH
     - /bin/cp nosotros.html $DEPLOYPATH
     - /bin/cp -r assets $DEPLOYPATH
+    - /bin/chmod 755 $DEPLOYPATH
+    - /bin/chmod 644 $DEPLOYPATH/*.html
+    - /bin/chmod 644 $DEPLOYPATH/assets/css/styles.css
+    - /bin/chmod 644 $DEPLOYPATH/assets/js/config.js
+    - /bin/chmod 644 $DEPLOYPATH/assets/img/*.jpg $DEPLOYPATH/assets/img/*.png 2>/dev/null || true
