@@ -1,0 +1,9 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home2/betsabyc/repositories/NexumPartners
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp areas-practica.html $DEPLOYPATH
+    - /bin/cp contacto.html $DEPLOYPATH
+    - /bin/cp nosotros.html $DEPLOYPATH
+    - /bin/cp -r assets $DEPLOYPATH
