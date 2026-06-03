@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Contacto | Nexum Partners</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/config.js"></script>
+</head>
+<body class="bg-surface text-on-surface font-body-md">
+
+    <!-- Header -->
+    <header class="sticky top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/30">
+        <div class="flex justify-between items-center h-20 px-margin-desktop max-w-container-max-width mx-auto">
+            <a href="index.html" class="flex items-center gap-4">
+                <img alt="Nexum Partners Logo" class="w-auto object-contain h-24" src="assets/img/logo-header.png">
+            </a>
+            <nav class="hidden md:flex items-center gap-8">
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="index.html">Inicio</a>
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="nosotros.html">Nosotros</a>
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="areas-practica.html">Áreas de Práctica</a>
+                <a class="font-label-md text-label-md text-primary border-b border-primary pb-1" href="contacto.html">Contacto</a>
+            </nav>
+            <a href="contacto.html" class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-md text-label-md hover:bg-primary-container transition-all duration-300 active:scale-95">
+                Consulta
+            </a>
+        </div>
+    </header>
+
+    <main class="max-w-container-max-width mx-auto px-margin-desktop py-20">
+        <!-- Hero -->
+        <section class="mb-20 text-center md:text-left">
+            <span class="text-on-tertiary-container font-label-sm text-label-sm uppercase tracking-widest mb-4 block">Establezca una Alianza</span>
+            <h1 class="font-display-lg text-display-lg text-primary mb-6">Contacte con Nexum Partners</h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                Ofrecemos asesoría legal de élite diseñada para la complejidad corporativa moderna. Nuestro equipo en Santiago está listo para proteger sus intereses globales.
+            </p>
+        </section>
+
+        <!-- Form + Info Bento -->
+        <div class="grid grid-cols-12 gap-gutter">
+            <!-- Form -->
+            <div class="col-span-12 lg:col-span-7 bg-surface-container-lowest p-10 border border-outline-variant/30 rounded-lg shadow-sm">
+                <h2 class="font-headline-md text-headline-md text-primary mb-8">Formulario de Consulta Profesional</h2>
+                <form class="space-y-8" id="contacto-form">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="flex flex-col gap-2">
+                            <label class="font-label-sm text-label-sm text-outline" for="nombre">NOMBRE COMPLETO</label>
+                            <input id="nombre" class="bg-transparent border-0 border-b border-outline-variant py-2 transition-all text-body-md focus:ring-0 focus:border-primary" placeholder="Juan Pérez" type="text" name="nombre" required>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label class="font-label-sm text-label-sm text-outline" for="email">EMAIL CORPORATIVO</label>
+                            <input id="email" class="bg-transparent border-0 border-b border-outline-variant py-2 transition-all text-body-md focus:ring-0 focus:border-primary" placeholder="jperez@empresa.com" type="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label class="font-label-sm text-label-sm text-outline" for="area">ÁREA DE INTERÉS</label>
+                        <select id="area" class="bg-transparent border-0 border-b border-outline-variant py-2 transition-all text-body-md focus:ring-0 focus:border-primary appearance-none" name="area">
+                            <option disabled selected>Seleccione una especialidad</option>
+                            <option>Derecho Civil</option>
+                            <option>Derecho Comercial</option>
+                            <option>Derecho Laboral</option>
+                            <option>Derecho de Familia</option>
+                            <option>Derecho Tributario</option>
+                            <option>Derecho Concursal y Ley 20.720</option>
+                            <option>Cobranza Judicial</option>
+                            <option>Litigación y Arbitraje</option>
+                        </select>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label class="font-label-sm text-label-sm text-outline" for="mensaje">MENSAJE</label>
+                        <textarea id="mensaje" class="bg-transparent border-0 border-b border-outline-variant py-2 transition-all text-body-md focus:ring-0 focus:border-primary resize-none" placeholder="Describa brevemente su requerimiento legal..." rows="4" name="mensaje" required></textarea>
+                    </div>
+                    <div class="pt-4">
+                        <button class="bg-primary text-on-primary px-10 py-4 rounded-lg font-label-md text-label-md hover:shadow-lg transition-all flex items-center gap-3" type="submit">
+                            ENVIAR CONSULTA
+                            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Info Column -->
+            <div class="col-span-12 lg:col-span-5 flex flex-col gap-gutter">
+                <!-- Contact Details -->
+                <div class="bg-primary text-on-primary p-8 rounded-lg">
+                    <h3 class="font-headline-md text-headline-md mb-6">Información Directa</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <span class="material-symbols-outlined text-tertiary-fixed-dim">call</span>
+                            <div>
+                                <p class="font-label-sm text-label-sm opacity-60">LÍNEA CORPORATIVA</p>
+                                <p class="font-body-lg text-body-lg">+56 9 7946 3924</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="material-symbols-outlined text-tertiary-fixed-dim">mail</span>
+                            <div>
+                                <p class="font-label-sm text-label-sm opacity-60">CONSULTAS GENERALES</p>
+                                <p class="font-body-lg text-body-lg">contacto@nexumpartners.cl</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="material-symbols-outlined text-tertiary-fixed-dim">schedule</span>
+                            <div>
+                                <p class="font-label-sm text-label-sm opacity-60">HORARIO DE ATENCIÓN</p>
+                                <p class="font-body-lg text-body-lg">Lun — Vie: 09:00 - 18:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map Card -->
+                <div class="relative flex-1 min-h-[300px] rounded-lg overflow-hidden border border-outline-variant/30 group">
+                    <img alt="Ubicación Oficina Santiago" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/img/map-office.jpg">
+                    <div class="absolute inset-0 bg-primary/20 group-hover:bg-primary/10 transition-colors duration-500"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 bg-surface/90 backdrop-blur-sm border-t border-outline-variant/30">
+                        <div class="flex items-center gap-3 mb-1">
+                            <span class="material-symbols-outlined text-primary">location_on</span>
+                            <span class="font-label-md text-label-md text-primary">SANTIAGO, CHILE</span>
+                        </div>
+                        <p class="font-body-md text-body-md text-on-surface-variant">Nueva providencia 1945 of 807<br>Santiago, Región Metropolitana</p>
+                    </div>
+                    <a class="absolute top-4 right-4 bg-surface text-primary p-3 rounded-full shadow-lg hover:bg-primary hover:text-on-primary transition-all" href="https://maps.google.com" target="_blank" rel="noopener">
+                        <span class="material-symbols-outlined">open_in_new</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Secondary Info -->
+        <section class="mt-24 grid grid-cols-1 md:grid-cols-3 gap-gutter">
+            <div class="p-8 border-l border-tertiary-fixed-dim">
+                <h4 class="font-label-md text-label-md text-primary mb-3">CONTRATACIONES</h4>
+                <p class="font-body-md text-body-md text-on-surface-variant">¿Busca unirse a nuestro equipo de expertos? Envíe su CV a contacto@nexumpartners.cl</p>
+            </div>
+            <div class="p-8 border-l border-tertiary-fixed-dim">
+                <h4 class="font-label-md text-label-md text-primary mb-3">PRENSA</h4>
+                <p class="font-body-md text-body-md text-on-surface-variant">Para requerimientos de medios y publicaciones legales: contacto@nexumpartners.cl</p>
+            </div>
+            <div class="p-8 border-l border-tertiary-fixed-dim">
+                <h4 class="font-label-md text-label-md text-primary mb-3">CUMPLIMIENTO</h4>
+                <p class="font-body-md text-body-md text-on-surface-variant">Nuestro canal ético y consultas están disponibles en el horario de atención establecido.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary py-16">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max-width mx-auto">
+            <div class="md:col-span-1">
+                <img alt="Nexum Partners Logo" class="w-auto object-contain mb-6 h-24 footer-logo" src="assets/img/logo-header.png">
+                <p class="font-body-md text-body-md text-outline-variant mb-8">
+                    Firmando el futuro de la asesoría legal corporativa. Excelencia técnica y visión estratégica desde el corazón financiero de Santiago.
+                </p>
+            </div>
+            <div class="md:col-span-1">
+                <h4 class="font-label-md text-label-md text-white mb-6 uppercase">Servicios</h4>
+                <ul class="space-y-4">
+                    <li><a class="font-body-md text-body-md text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="areas-practica.html">Derecho Corporativo</a></li>
+                    <li><a class="font-body-md text-body-md text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="areas-practica.html">Litigios</a></li>
+                    <li><a class="font-body-md text-body-md text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="areas-practica.html">Inmobiliario</a></li>
+                    <li><a class="font-body-md text-body-md text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="areas-practica.html">Asesoría Tributaria</a></li>
+                </ul>
+            </div>
+            <div class="md:col-span-1">
+                <h4 class="font-label-md text-label-md text-white mb-6 uppercase">Legal</h4>
+                <ul class="space-y-4">
+                    <li><a class="font-body-md text-body-md text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="nosotros.html">Declaración de Misión</a></li>
+                    <li><a class="font-body-md text-body-md text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="nosotros.html">Política de Privacidad</a></li>
+                    <li><a class="font-body-md text-body-md text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="nosotros.html">Política de Cookies</a></li>
+                </ul>
+            </div>
+            <div class="md:col-span-1">
+                <h4 class="font-label-md text-label-md text-white mb-6 uppercase">Contacto</h4>
+                <p class="font-body-md text-body-md text-outline-variant mb-2">Nueva providencia 1945 of 807</p>
+                <p class="font-body-md text-body-md text-outline-variant mb-2">Santiago, Chile</p>
+                <p class="font-body-md text-body-md text-outline-variant mb-2">+56 9 7946 3924</p>
+                <p class="font-body-md text-body-md text-outline-variant">contacto@nexumpartners.cl</p>
+            </div>
+        </div>
+        <div class="max-w-container-max-width mx-auto px-margin-desktop mt-16 pt-8 border-t border-primary-container text-center md:text-left">
+            <p class="font-label-sm text-label-sm text-outline-variant">
+                © 2026 Nexum Partners. Todos los derechos reservados. Propiedad intelectual de Chile.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Form mailto handler -->
+    <script>
+        document.getElementById('contacto-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            var f = this;
+            var nombre = encodeURIComponent(f.nombre.value);
+            var email = encodeURIComponent(f.email.value);
+            var area = encodeURIComponent(f.area.value);
+            var mensaje = encodeURIComponent(f.mensaje.value);
+            var body = 'Nombre: ' + nombre + '%0D%0A' +
+                       'Email: ' + email + '%0D%0A' +
+                       'Área de Interés: ' + area + '%0D%0A' +
+                       'Mensaje: ' + mensaje;
+            var mailto = 'mailto:contacto@nexumpartners.cl?subject=Consulta%20Legal%20-%20' + area + '&body=' + body;
+            window.location.href = mailto;
+
+            var btn = f.querySelector('button');
+            var originalText = btn.innerHTML;
+            btn.innerHTML = '<span class="material-symbols-outlined text-[18px]">check_circle</span> ABRIENDO CLIENTE DE CORREO...';
+            btn.classList.add('opacity-80');
+            setTimeout(function() {
+                btn.innerHTML = originalText;
+                btn.classList.remove('opacity-80');
+            }, 3000);
+        });
+    </script>
+
+</body>
+</html>

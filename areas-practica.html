@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Áreas de Práctica | Nexum Partners</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/config.js"></script>
+</head>
+<body class="bg-surface text-on-surface selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+
+    <!-- Header -->
+    <header class="sticky top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/30">
+        <div class="flex justify-between items-center h-20 px-margin-desktop max-w-container-max-width mx-auto">
+            <a href="index.html" class="flex items-center gap-4">
+                <img alt="Nexum Partners Logo" class="w-auto object-contain h-24" src="assets/img/logo-header.png">
+            </a>
+            <nav class="hidden md:flex items-center gap-8">
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="index.html">Inicio</a>
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="nosotros.html">Nosotros</a>
+                <a class="font-label-md text-label-md text-primary border-b border-primary pb-1" href="areas-practica.html">Áreas de Práctica</a>
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="contacto.html">Contacto</a>
+            </nav>
+            <a href="contacto.html" class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-md text-label-md hover:bg-primary-container transition-all duration-300 active:scale-95">
+                Consulta
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="relative h-[60vh] flex items-center justify-center overflow-hidden bg-primary">
+            <div class="absolute inset-0 z-0">
+                <div class="absolute inset-0 bg-primary/70 z-10"></div>
+                <img alt="Interior de la Corte Suprema de Justicia de Chile" class="w-full h-full object-cover" src="assets/img/courtroom.jpg">
+            </div>
+            <div class="relative z-20 text-center px-margin-desktop max-w-container-max-width mx-auto">
+                <span class="font-label-sm text-label-sm text-tertiary-fixed-dim uppercase tracking-[0.2em] mb-4 block">Excelencia Jurídica</span>
+                <h1 class="font-display-lg text-display-lg text-white mb-6" style="font-family: 'EB Garamond', serif;">Nuestras Áreas de Práctica</h1>
+                <p class="font-body-lg text-body-lg text-surface-variant max-w-2xl mx-auto">
+                    Brindamos asesoría legal integral con un enfoque técnico y estratégico, fundamentado en la rigurosidad institucional de la República de Chile.
+                </p>
+            </div>
+        </section>
+
+        <!-- Practice Areas Grid -->
+        <section class="py-24 px-margin-desktop max-w-container-max-width mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+
+                <!-- Derecho Civil -->
+                <div class="p-10 bg-white border border-outline-variant/30 rounded-lg group hover:border-tertiary-fixed-dim transition-all duration-500">
+                    <div class="flex flex-col h-full">
+                        <span class="material-symbols-outlined text-primary text-4xl mb-6">balance</span>
+                        <h3 class="font-headline-md text-headline-md text-primary mb-4" style="font-family: 'EB Garamond', serif;">Derecho Civil</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-8">
+                            Representación integral en contratos, responsabilidad civil contractual y extracontractual, y gestión de derechos de propiedad y reales.
+                        </p>
+                        <div class="mt-auto pt-4 border-t border-outline-variant/20 flex items-center justify-between">
+                            <span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">Servicios Técnicos</span>
+                            <span class="material-symbols-outlined text-outline group-hover:text-tertiary-fixed-dim transition-colors">arrow_forward</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Derecho Comercial -->
+                <div class="p-10 bg-white border border-outline-variant/30 rounded-lg group hover:border-tertiary-fixed-dim transition-all duration-500">
+                    <div class="flex flex-col h-full">
+                        <span class="material-symbols-outlined text-primary text-4xl mb-6">corporate_fare</span>
+                        <h3 class="font-headline-md text-headline-md text-primary mb-4" style="font-family: 'EB Garamond', serif;">Derecho Comercial</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-8">
+                            Estructuración de sociedades, fusiones y adquisiciones, gobierno corporativo y asesoría en transacciones comerciales complejas.
+                        </p>
+                        <div class="mt-auto pt-4 border-t border-outline-variant/20 flex items-center justify-between">
+                            <span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">Estrategia Corporativa</span>
+                            <span class="material-symbols-outlined text-outline group-hover:text-tertiary-fixed-dim transition-colors">arrow_forward</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Derecho Laboral -->
+                <div class="p-10 bg-white border border-outline-variant/30 rounded-lg group hover:border-tertiary-fixed-dim transition-all duration-500">
+                    <div class="flex flex-col h-full">
+                        <span class="material-symbols-outlined text-primary text-4xl mb-6">groups</span>
+                        <h3 class="font-headline-md text-headline-md text-primary mb-4" style="font-family: 'EB Garamond', serif;">Derecho Laboral</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-8">
+                            Relaciones laborales individuales y colectivas, cumplimiento normativo y defensa en litigios ante los Tribunales del Trabajo.
+                        </p>
+                        <div class="mt-auto pt-4 border-t border-outline-variant/20 flex items-center justify-between">
+                            <span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">Recursos Humanos</span>
+                            <span class="material-symbols-outlined text-outline group-hover:text-tertiary-fixed-dim transition-colors">arrow_forward</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Derecho de Familia -->
+                <div class="p-10 bg-white border border-outline-variant/30 rounded-lg group hover:border-tertiary-fixed-dim transition-all duration-500">
+                    <div class="flex flex-col h-full">
+                        <span class="material-symbols-outlined text-primary text-4xl mb-6">family_history</span>
+                        <h3 class="font-headline-md text-headline-md text-primary mb-4" style="font-family: 'EB Garamond', serif;">Derecho de Familia</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-8">
+                            Gestión técnica de procesos de divorcio, pensiones alimenticias, cuidado personal y planificación sucesoria hereditaria.
+                        </p>
+                        <div class="mt-auto pt-4 border-t border-outline-variant/20 flex items-center justify-between">
+                            <span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">Derecho Privado</span>
+                            <span class="material-symbols-outlined text-outline group-hover:text-tertiary-fixed-dim transition-colors">arrow_forward</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Derecho Tributario -->
+                <div class="p-10 bg-white border border-outline-variant/30 rounded-lg group hover:border-tertiary-fixed-dim transition-all duration-500">
+                    <div class="flex flex-col h-full">
+                        <span class="material-symbols-outlined text-primary text-4xl mb-6">receipt_long</span>
+                        <h3 class="font-headline-md text-headline-md text-primary mb-4" style="font-family: 'EB Garamond', serif;">Derecho Tributario</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-8">
+                            Planificación impositiva, cumplimiento de obligaciones tributarias y defensa técnica ante el Servicio de Impuestos Internos y TTA.
+                        </p>
+                        <div class="mt-auto pt-4 border-t border-outline-variant/20 flex items-center justify-between">
+                            <span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">Optimización Fiscal</span>
+                            <span class="material-symbols-outlined text-outline group-hover:text-tertiary-fixed-dim transition-colors">arrow_forward</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Derecho Concursal -->
+                <div class="p-10 bg-white border border-outline-variant/30 rounded-lg group hover:border-tertiary-fixed-dim transition-all duration-500">
+                    <div class="flex flex-col h-full">
+                        <span class="material-symbols-outlined text-primary text-4xl mb-6">account_balance_wallet</span>
+                        <h3 class="font-headline-md text-headline-md text-primary mb-4" style="font-family: 'EB Garamond', serif;">Derecho Concursal</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-8">
+                            Asesoría en procesos de reorganización y liquidación de empresas y personas naturales bajo la Ley 20.720 de insolvencia y reemprendimiento.
+                        </p>
+                        <div class="mt-auto pt-4 border-t border-outline-variant/20 flex items-center justify-between">
+                            <span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">Ley 20.720</span>
+                            <span class="material-symbols-outlined text-outline group-hover:text-tertiary-fixed-dim transition-colors">arrow_forward</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cobranza Judicial -->
+                <div class="p-10 bg-white border border-outline-variant/30 rounded-lg group hover:border-tertiary-fixed-dim transition-all duration-500">
+                    <div class="flex flex-col h-full">
+                        <span class="material-symbols-outlined text-primary text-4xl mb-6">gavel</span>
+                        <h3 class="font-headline-md text-headline-md text-primary mb-4" style="font-family: 'EB Garamond', serif;">Cobranza Judicial</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-8">
+                            Estrategias de recuperación de activos, ejecución de títulos ejecutivos y gestión masiva de cartera de morosidad institucional.
+                        </p>
+                        <div class="mt-auto pt-4 border-t border-outline-variant/20 flex items-center justify-between">
+                            <span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">Gestión de Activos</span>
+                            <span class="material-symbols-outlined text-outline group-hover:text-tertiary-fixed-dim transition-colors">arrow_forward</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Litigación y Arbitraje -->
+                <div class="p-10 bg-white border border-outline-variant/30 rounded-lg group hover:border-tertiary-fixed-dim transition-all duration-500 lg:col-span-2">
+                    <div class="flex flex-col md:flex-row gap-10 h-full">
+                        <div class="flex-1">
+                            <span class="material-symbols-outlined text-primary text-4xl mb-6">account_balance</span>
+                            <h3 class="font-headline-md text-headline-md text-primary mb-4" style="font-family: 'EB Garamond', serif;">Litigación y Arbitraje</h3>
+                            <p class="font-body-md text-body-md text-on-surface-variant mb-8">
+                                Defensa técnica en juicios civiles de alta complejidad y procedimientos arbitrales nacionales ante el CAM Santiago. Nuestra experiencia garantiza una representación rigurosa en todas las instancias del Poder Judicial chileno.
+                            </p>
+                        </div>
+                        <div class="flex-1 flex flex-col justify-end">
+                            <ul class="space-y-4 mb-8">
+                                <li class="flex items-center gap-3 font-label-md text-label-md text-primary">
+                                    <span class="material-symbols-outlined text-primary text-sm">check_circle</span> Corte de Apelaciones
+                                </li>
+                                <li class="flex items-center gap-3 font-label-md text-label-md text-primary">
+                                    <span class="material-symbols-outlined text-primary text-sm">check_circle</span> Corte Suprema
+                                </li>
+                                <li class="flex items-center gap-3 font-label-md text-label-md text-primary">
+                                    <span class="material-symbols-outlined text-primary text-sm">check_circle</span> Tribunales Arbitrales
+                                </li>
+                            </ul>
+                            <div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between">
+                                <span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">Defensa Institucional</span>
+                                <span class="material-symbols-outlined text-outline group-hover:text-tertiary-fixed-dim transition-colors">arrow_forward</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="bg-primary text-on-primary py-24">
+            <div class="px-margin-desktop max-w-container-max-width mx-auto text-center">
+                <h2 class="font-headline-lg text-headline-lg mb-6" style="font-family: 'EB Garamond', serif;">Consulte su Caso con Expertos</h2>
+                <p class="font-body-lg text-body-lg text-on-primary-container max-w-2xl mx-auto mb-10">
+                    Inicie un proceso de evaluación técnica con nuestro equipo de asociados para determinar la estrategia legal más eficiente para sus objetivos.
+                </p>
+                <a href="contacto.html" class="inline-block bg-surface-container-lowest text-primary px-10 py-4 font-label-md text-label-md hover:bg-surface transition-colors">
+                    SOLICITAR CONSULTA
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary py-16">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max-width mx-auto">
+            <div class="md:col-span-1">
+                <img alt="Nexum Partners Logo" class="w-auto object-contain mb-6 h-24 footer-logo" src="assets/img/logo-header.png">
+                <p class="font-body-md text-body-md text-outline-variant mb-8">
+                    Compromiso con la legalidad y la excelencia estratégica en el territorio chileno.
+                </p>
+            </div>
+            <div class="md:col-span-1">
+                <h4 class="font-label-md text-label-md text-white mb-6 uppercase">Áreas Principales</h4>
+                <ul class="space-y-3">
+                    <li><a class="font-label-sm text-label-sm text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="areas-practica.html">Derecho Corporativo</a></li>
+                    <li><a class="font-label-sm text-label-sm text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="areas-practica.html">Litigación</a></li>
+                    <li><a class="font-label-sm text-label-sm text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="areas-practica.html">Inmobiliario</a></li>
+                    <li><a class="font-label-sm text-label-sm text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="areas-practica.html">Asesoría Tributaria</a></li>
+                </ul>
+            </div>
+            <div class="md:col-span-1">
+                <h4 class="font-label-md text-label-md text-white mb-6 uppercase">Institucional</h4>
+                <ul class="space-y-3">
+                    <li><a class="font-label-sm text-label-sm text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="nosotros.html">Misión y Visión</a></li>
+                    <li><a class="font-label-sm text-label-sm text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="nosotros.html">Política de Privacidad</a></li>
+                </ul>
+            </div>
+            <div class="md:col-span-1">
+                <h4 class="font-label-md text-label-md text-white mb-6 uppercase">Oficina Central</h4>
+                <p class="font-label-sm text-label-sm text-outline-variant">Nueva providencia 1945 of 807</p>
+                <p class="font-label-sm text-label-sm text-outline-variant">Santiago, Chile</p>
+            </div>
+        </div>
+        <div class="mt-16 pt-8 border-t border-primary-container/30 px-margin-desktop max-w-container-max-width mx-auto">
+            <p class="font-label-sm text-label-sm text-outline-variant/60 text-center">
+                © 2026 Nexum Partners. Todos los derechos reservados. Propiedad intelectual protegida en Chile.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
