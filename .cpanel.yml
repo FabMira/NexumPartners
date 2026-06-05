@@ -1,7 +1,14 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home2/betsabyc/public_html
+    - export BRANCH=$(/usr/bin/git rev-parse --abbrev-ref HEAD)
+    - |
+      if [ "$BRANCH" = "main" ]; then
+        export DEPLOYPATH=/home2/betsabyc/public_html
+      else
+        export DEPLOYPATH=/home2/betsabyc/public_html_dev
+      fi
+    - /bin/mkdir -p $DEPLOYPATH
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp areas-practica.html $DEPLOYPATH
     - /bin/cp contacto.html $DEPLOYPATH
@@ -11,4 +18,4 @@ deployment:
     - /bin/chmod 644 $DEPLOYPATH/*.html
     - /bin/chmod 644 $DEPLOYPATH/assets/css/styles.css
     - /bin/chmod 644 $DEPLOYPATH/assets/js/config.js
-    - /bin/chmod 644 $DEPLOYPATH/assets/img/*.jpg $DEPLOYPATH/assets/img/*.png 2>/dev/null || true
+    - /bin/chmod 644 $DEPLOYPATH/assets/img/* 2>/dev/null || true
