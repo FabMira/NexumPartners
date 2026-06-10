@@ -1,222 +1,345 @@
-<!DOCTYPE html>
-<html class="light" lang="es">
-<head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Nosotros | Nexum Partners</title>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <script src="assets/js/config.js"></script>
+<!DOCTYPE html><html class="light" lang="es"><head>
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Nosotros | Nexum Partners</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .text-balance { text-wrap: balance; }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed": "#ffdea5",
+                        "tertiary": "#1f1300",
+                        "on-primary-fixed-variant": "#38485a",
+                        "on-secondary-container": "#586377",
+                        "surface-tint": "#4f6073",
+                        "primary": "#041627",
+                        "on-tertiary-container": "#af8c47",
+                        "surface": "#f8f9fa",
+                        "outline-variant": "#c4c6cd",
+                        "on-primary-fixed": "#0b1d2d",
+                        "inverse-on-surface": "#f0f1f2",
+                        "outline": "#74777d",
+                        "secondary-container": "#d5e0f7",
+                        "on-tertiary-fixed": "#261900",
+                        "on-secondary-fixed-variant": "#3c475a",
+                        "secondary": "#545f72",
+                        "on-error-container": "#93000a",
+                        "surface-variant": "#e1e3e4",
+                        "secondary-fixed": "#d8e3fa",
+                        "on-secondary-fixed": "#111c2c",
+                        "error-container": "#ffdad6",
+                        "surface-bright": "#f8f9fa",
+                        "inverse-primary": "#b7c8de",
+                        "surface-dim": "#d9dadb",
+                        "on-error": "#ffffff",
+                        "primary-fixed": "#d2e4fb",
+                        "on-surface-variant": "#44474c",
+                        "inverse-surface": "#2e3132",
+                        "background": "#f8f9fa",
+                        "secondary-fixed-dim": "#bcc7dd",
+                        "on-secondary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "primary-container": "#1a2b3c",
+                        "primary-fixed-dim": "#b7c8de",
+                        "on-tertiary-fixed-variant": "#5d4201",
+                        "on-background": "#191c1d",
+                        "surface-container-low": "#f3f4f5",
+                        "on-primary-container": "#8192a7",
+                        "error": "#ba1a1a",
+                        "surface-container": "#edeeef",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed-dim": "#e9c176",
+                        "tertiary-container": "#392700",
+                        "surface-container-highest": "#e1e3e4",
+                        "surface-container-high": "#e7e8e9",
+                        "on-surface": "#191c1d",
+                        "surface-container-lowest": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-tablet": "32px",
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "container-max-width": "1280px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Manrope"],
+                        "headline-md": ["EB Garamond"],
+                        "headline-lg-mobile": ["EB Garamond"],
+                        "body-md": ["Manrope"],
+                        "label-sm": ["Manrope"],
+                        "headline-lg": ["EB Garamond"],
+                        "display-lg": ["EB Garamond"],
+                        "label-md": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "1.4", "letterSpacing": "0.08em", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                        "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "500"}],
+                        "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 <body class="bg-surface text-on-surface font-body-md selection:bg-tertiary-fixed">
-
-    <!-- Header -->
-    <header class="sticky top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/30">
-        <div class="flex justify-between items-center h-20 px-margin-desktop max-w-container-max-width mx-auto">
-            <a href="index.html" class="flex items-center gap-4">
-                <img alt="Nexum Partners Logo" class="w-auto object-contain h-24" src="assets/img/logo-header.png">
-            </a>
-            <nav class="hidden md:flex items-center gap-8">
-                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="index.html">Inicio</a>
-                <a class="font-label-md text-label-md text-primary border-b border-primary pb-1" href="nosotros.html">Nosotros</a>
-                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="areas-practica.html">Áreas de Práctica</a>
-                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="contacto.html">Contacto</a>
-            </nav>
-            <a href="contacto.html" class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-md text-label-md hover:bg-primary-container transition-all duration-300 active:scale-95">
-                Consulta
-            </a>
-        </div>
-    </header>
-
-    <main>
-        <!-- Hero -->
-        <section class="relative py-24 md:py-32 overflow-hidden bg-surface-container-lowest">
-            <div class="max-w-container-max-width mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
-                <div class="md:col-span-6 z-10">
-                    <span class="font-label-sm text-label-sm text-on-tertiary-container uppercase mb-4 block">Referente Legal en Chile</span>
-                    <h1 class="font-display-lg text-display-lg text-primary mb-6 text-balance">Excelencia Jurídica y Visión Estratégica.</h1>
-                    <p class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-lg">Nexum Partners nace de la convicción de que el derecho debe ser un habilitador de negocios, no un obstáculo. Proveemos soluciones de alto impacto para desafíos corporativos complejos.</p>
-                    <div class="flex gap-4">
-                        <a href="#la-firma" class="bg-primary text-on-primary px-8 py-4 rounded-lg font-label-md text-label-md hover:shadow-lg transition-all">Nuestra Historia</a>
-                        <a href="contacto.html" class="border border-primary text-primary px-8 py-4 rounded-lg font-label-md text-label-md hover:bg-surface-variant/20 transition-all">Contáctanos</a>
-                    </div>
-                </div>
-                <div class="md:col-span-6 relative h-[500px]">
-                    <div class="absolute inset-0 bg-primary/5 rounded-xl -rotate-2"></div>
-                    <img alt="Oficina legal moderna en Santiago" class="w-full h-full object-cover rounded-xl shadow-xl relative z-10 border border-outline-variant/30" src="assets/img/office.jpg">
-                </div>
-            </div>
-        </section>
-
-        <!-- La Firma -->
-        <section id="la-firma" class="py-24 bg-surface">
-            <div class="max-w-container-max-width mx-auto px-margin-desktop">
-                <div class="flex flex-col md:flex-row gap-gutter">
-                    <div class="md:w-1/3">
-                        <h2 class="font-headline-lg text-headline-lg text-primary sticky top-24">La Firma</h2>
-                        <div class="h-1 w-12 bg-tertiary-fixed-dim mt-4"></div>
-                    </div>
-                    <div class="md:w-2/3 space-y-8">
-                        <p class="font-headline-md text-headline-md text-on-surface italic leading-relaxed">
+<!-- TopAppBar -->
+<header class="sticky top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/30">
+<div class="flex items-center px-margin-desktop max-w-container-max-width mx-auto min-h-32 relative justify-between">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary md:hidden" data-icon="menu">menu</span>
+<img alt="Nexum Partners Logo" class="w-auto object-contain h-32" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuPK4jI4aZLmErQZhVL2dAVJ9mn-Lxr2kopRTHvS0tp0T45Sjy2BukID1rr2AhQxtcXNjjG96JrIjorO_ICOX9NrK518VNuIiQxiT7xHKhwjnNBac5_s18lO4ttb2CngRz7TbA9GSotWkv7HU76zBnr-0Ia0znW0EBDorX2P_lJ2hT-0_gh5OC6DpesFaSV4-zNjHnMl97_qfZ2lL1creJhQlM0Lqyl__okpaYH9JAEMlF_SDVpesO_nk-M8900BQQXZrCQ-17_X-v">
+</div>
+<nav class="md:flex gap-8 items-center flex justify-between w-full"><div class="flex gap-8 items-center mx-auto"><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#" style="transform: scale(1);">Inicio</a><a class="font-label-md text-label-md text-primary border-b border-primary pb-1" href="#" style="transform: scale(1);">Nosotros</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#" style="transform: scale(1);">Áreas de Práctica</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#" style="transform: scale(1);">Contacto</a></div><button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-md text-label-md hover:bg-primary-container transition-all active:opacity-70" style="transform: scale(1);">Consulta</button></nav>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative py-24 md:py-32 overflow-hidden bg-surface-container-lowest">
+<div class="max-w-container-max-width mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-6 z-10">
+<span class="font-label-sm text-label-sm text-on-tertiary-container uppercase mb-4 block">Referente Legal en Chile</span>
+<h1 class="font-display-lg text-display-lg text-primary mb-6 text-balance">Excelencia Jurídica y Visión Estratégica.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-lg">Nexum Partners nace de la convicción de que el derecho debe ser un habilitador de negocios, no un obstáculo. Proveemos soluciones de alto impacto para desafíos corporativos complejos.</p>
+<div class="flex gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-lg font-label-md text-label-md hover:shadow-lg transition-all">Nuestra Historia</button>
+<button class="border border-primary text-primary px-8 py-4 rounded-lg font-label-md text-label-md hover:bg-surface-variant/20 transition-all" style="transform: scale(1);">Contáctanos</button>
+</div>
+</div>
+<div class="md:col-span-6 relative h-[500px]">
+<div class="absolute inset-0 bg-primary/5 rounded-xl -rotate-2"></div>
+<img alt="Modern legal office in Santiago" class="w-full h-full object-cover rounded-xl shadow-xl relative z-10 border border-outline-variant/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA64gxBDvo0I89ptONY8F-BM_Ul89h0iA0-rGnO6m35g0rjk-OPXWi41wMtZx2dh0yb-5tIGKrbulAGtEkwhjoydDlyi-Dm-o53Y59smA3SCAXyRsHKSSSb17Z3sMxt0IkUg3PAUpeeWCbqel6BaPu-bnPwjk_zVBNi7sIPW5Ppx0LeADrdfugLBJlFeqXPajoaS6Bz30PZtt2OC-59w6bwKMjX6hcdYNmD5oyFiRL1UFbtukyGtotGJL9mnN-XMSGNXYlfFI_7mzSx">
+</div>
+</div>
+</section>
+<!-- Presentation Section -->
+<section class="py-24 bg-surface">
+<div class="max-w-container-max-width mx-auto px-margin-desktop">
+<div class="flex flex-col md:flex-row gap-gutter">
+<div class="md:w-1/3">
+<h2 class="font-headline-lg text-headline-lg text-primary sticky top-24">La Firma</h2>
+<div class="h-1 w-12 bg-tertiary-fixed-dim mt-4"></div>
+</div>
+<div class="md:w-2/3 space-y-8">
+<p class="font-headline-md text-headline-md text-on-surface italic leading-relaxed">
                             "En Nexum Partners, nuestra identidad se forja en la intersección de la tradición legal chilena y la innovación corporativa global."
                         </p>
-                        <p class="font-body-lg text-body-lg text-on-surface-variant">
-                            Establecidos en el corazón financiero de Chile, hemos consolidado una práctica legal orientada a resultados. Nuestro bufete se distingue por una comprensión profunda del ecosistema regulatorio nacional.
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                            Establecidos en el corazón financiero de Chile, hemos consolidado una práctica legal &nbsp;orientada a resultados. Nuestro buffete &nbsp;se distingue por una comprensión profunda del ecosistema regulatorio nacional.</p>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Con gran expereriencia institucional y privada, ofrecemos asesoría que trasciende lo estrictamente legal para convertirse en un pilar fundamental de sus decisiones estratégicas.
                         </p>
-                        <p class="font-body-lg text-body-lg text-on-surface-variant">
-                            Con gran experiencia institucional y privada, ofrecemos asesoría que trasciende lo estrictamente legal para convertirse en un pilar fundamental de sus decisiones estratégicas.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Misión y Visión -->
-        <section class="py-24 bg-white overflow-hidden">
-            <div class="max-w-container-max-width mx-auto px-margin-desktop">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-                    <div class="order-2 md:order-1">
-                        <div class="space-y-12">
-                            <div>
-                                <h3 class="font-headline-lg text-headline-lg text-primary mb-4 flex items-center gap-3">
-                                    <span class="material-symbols-outlined text-tertiary-fixed-dim">flag</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Mission & Vision Section -->
+<section class="py-24 bg-white overflow-hidden">
+<div class="max-w-container-max-width mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="order-2 md:order-1">
+<div class="space-y-12">
+<div>
+<h3 class="font-headline-lg text-headline-lg text-primary mb-4 flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary-fixed-dim" data-icon="flag">flag</span>
                                     Misión
                                 </h3>
-                                <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
                                     Proveer asesoría legal de excelencia, combinando el rigor técnico con una visión estratégica de negocios, para proteger los intereses de nuestros clientes y facilitar su crecimiento sostenible en un entorno legal complejo.
                                 </p>
-                            </div>
-                            <div>
-                                <h3 class="font-headline-lg text-headline-lg text-primary mb-4 flex items-center gap-3">
-                                    <span class="material-symbols-outlined text-tertiary-fixed-dim">visibility</span>
+</div>
+<div>
+<h3 class="font-headline-lg text-headline-lg text-primary mb-4 flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary-fixed-dim" data-icon="visibility">visibility</span>
                                     Visión
                                 </h3>
-                                <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
-                                    Ser reconocidos como la firma legal líder en transacciones corporativas y resolución de conflictos en Chile, distinguiéndonos por nuestra integridad, innovación y la capacidad de anticipar los desafíos de nuestros clientes.
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                                    Ser reconocidos como la firma legal líder en Derecho Civil y Procesos de Insolvencia en Chile, distinguiéndonos por nuestra integridad, excelencia técnica y la capacidad de anticipar los desafíos de nuestros clientes.
                                 </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="order-1 md:order-2 relative">
-                        <div class="aspect-[4/3] rounded-xl overflow-hidden shadow-2xl border border-outline-variant/20">
-                            <img alt="Interior de la Corte Suprema de Chile" class="w-full h-full object-cover" src="assets/img/courtroom.jpg">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Valores -->
-        <section class="py-24 bg-surface-container-low border-t border-outline-variant/20">
-            <div class="max-w-container-max-width mx-auto px-margin-desktop">
-                <div class="text-center mb-16">
-                    <span class="font-label-sm text-label-sm text-on-tertiary-container uppercase tracking-widest">Cimientos Institucionales</span>
-                    <h2 class="font-headline-lg text-headline-lg text-primary mt-2">Nuestros Valores</h2>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-6 gap-6">
-
-                    <div class="md:col-span-3 bg-primary text-on-primary p-8 md:p-12 rounded-xl flex flex-col justify-end group hover:bg-primary-container transition-colors duration-500 border border-primary-container min-h-[320px]">
-                        <span class="material-symbols-outlined text-4xl mb-6 text-tertiary-fixed-dim">school</span>
-                        <h3 class="font-headline-lg text-headline-lg mb-4">Excelencia</h3>
-                        <p class="font-body-md text-body-md text-on-primary-container">Buscamos la perfección técnica en cada informe, contrato y representación judicial, superando los estándares convencionales del mercado.</p>
-                    </div>
-
-                    <div class="md:col-span-3 bg-surface-container-lowest p-8 md:p-12 rounded-xl border border-outline-variant/40 flex flex-col justify-center hover:shadow-md transition-all min-h-[320px]">
-                        <span class="material-symbols-outlined text-4xl mb-6 text-primary">transparency</span>
-                        <h3 class="font-headline-lg text-headline-lg text-primary mb-4">Ética e Integridad</h3>
-                        <p class="font-body-md text-body-md text-on-surface-variant">Actuamos bajo los más estrictos principios éticos, garantizando total transparencia y honestidad en nuestra relación con los clientes y las instituciones.</p>
-                    </div>
-
-                    <div class="md:col-span-2 bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/40 hover:border-primary/30 transition-all">
-                        <span class="material-symbols-outlined text-3xl mb-4 text-primary">handshake</span>
-                        <h4 class="font-headline-md text-headline-md text-primary mb-2">Compromiso</h4>
-                        <p class="font-body-md text-body-md text-on-surface-variant">Nos involucramos plenamente con los objetivos de nuestros clientes, asumiendo sus desafíos como propios con total dedicación.</p>
-                    </div>
-
-                    <div class="md:col-span-2 bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/40 hover:border-primary/30 transition-all">
-                        <span class="material-symbols-outlined text-3xl mb-4 text-primary">lightbulb</span>
-                        <h4 class="font-headline-md text-headline-md text-primary mb-2">Innovación</h4>
-                        <p class="font-body-md text-body-md text-on-surface-variant">Adoptamos nuevas tecnologías y enfoques creativos para ofrecer soluciones legales ágiles que se adaptan al mundo moderno.</p>
-                    </div>
-
-                    <div class="md:col-span-2 bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/40 hover:border-primary/30 transition-all">
-                        <span class="material-symbols-outlined text-3xl mb-4 text-primary">gavel</span>
-                        <h4 class="font-headline-md text-headline-md text-primary mb-2">Lealtad</h4>
-                        <p class="font-body-md text-body-md text-on-surface-variant">Construimos relaciones a largo plazo basadas en la confianza mutua y la protección incondicional de los intereses de quienes nos eligen.</p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Stats -->
-        <section class="py-20 bg-primary text-on-primary">
-            <div class="max-w-container-max-width mx-auto px-margin-desktop grid grid-cols-2 md:grid-cols-4 gap-gutter text-center">
-                <div>
-                    <div class="font-display-lg text-display-lg text-tertiary-fixed-dim">15+</div>
-                    <div class="font-label-md text-label-md uppercase tracking-widest text-on-primary-container mt-2">Años de Trayectoria</div>
-                </div>
-                <div>
-                    <div class="font-display-lg text-display-lg text-tertiary-fixed-dim">500+</div>
-                    <div class="font-label-md text-label-md uppercase tracking-widest text-on-primary-container mt-2">Casos Exitosos</div>
-                </div>
-                <div>
-                    <div class="font-display-lg text-display-lg text-tertiary-fixed-dim">Especialistas</div>
-                    <div class="font-label-md text-label-md uppercase tracking-widest text-on-primary-container mt-2">De Primer Nivel</div>
-                </div>
-                <div>
-                    <div class="font-display-lg text-display-lg text-tertiary-fixed-dim">Chile</div>
-                    <div class="font-label-md text-label-md uppercase tracking-widest text-on-primary-container mt-2">Presencia Nacional</div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-primary py-16">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max-width mx-auto">
-            <div class="md:col-span-1">
-                <img alt="Nexum Partners Logo" class="w-auto object-contain mb-6 h-24 footer-logo" src="assets/img/logo-header.png">
-                <p class="font-body-md text-body-md text-outline-variant mb-8">
-                    Liderando la práctica legal corporativa en Chile con excelencia e integridad.
+</div>
+</div>
+</div>
+<div class="order-1 md:order-2 relative">
+<div class="aspect-[4/3] rounded-xl overflow-hidden shadow-2xl border border-outline-variant/20">
+<img alt="Interior of the Supreme Court of Chile" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0uhxNO7TayvyUkA7woBjiJouUZiZeOM1cux-j1XD7cdkyeBXmuwPoVQTuaLKVx6OCsfwIOm1q5cOiJvfjGxG3JIkhkh8EHaAayYLGSuWpt8-7cKMqUAtVJFfFssc5_00YCYIETZzMJqKb56uxnRHImEEwBJb-kK1ETuxuLMsqNGEISoiRuN10STDnIyp1a8opGeved8q3RYXWKK9zG78fX63fqE8xGxH4ocDwtqh7UappzCCL_9jsHWMAfKu">
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Team Section -->
+<section class="py-24 bg-surface-container-lowest border-t border-outline-variant/20">
+<div class="max-w-container-max-width mx-auto px-margin-desktop">
+<div class="text-center mb-16">
+<span class="font-label-sm text-label-sm text-on-tertiary-container uppercase tracking-widest">Profesionales</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-2">Nuestro Equipo</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mt-4">
+                    Especialistas de primer nivel con experiencia en Derecho Civil y Procesos de Insolvencia.
                 </p>
-                <div class="flex gap-4">
-                    <span class="material-symbols-outlined text-outline-variant cursor-pointer hover:text-tertiary-fixed-dim">share</span>
-                    <span class="material-symbols-outlined text-outline-variant cursor-pointer hover:text-tertiary-fixed-dim">public</span>
-                </div>
-            </div>
-            <div class="md:col-span-1">
-                <h4 class="font-label-md text-label-md text-white mb-6 uppercase">Áreas de Práctica</h4>
-                <ul class="space-y-4">
-                    <li><a class="font-body-md text-body-md text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="areas-practica.html">Derecho Corporativo</a></li>
-                    <li><a class="font-body-md text-body-md text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="areas-practica.html">Litigios</a></li>
-                    <li><a class="font-body-md text-body-md text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="areas-practica.html">Bienes Raíces</a></li>
-                    <li><a class="font-body-md text-body-md text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="areas-practica.html">Asesoría Tributaria</a></li>
-                </ul>
-            </div>
-            <div class="md:col-span-1">
-                <h4 class="font-label-md text-label-md text-white mb-6 uppercase">Legal</h4>
-                <ul class="space-y-4">
-                    <li><a class="font-body-md text-body-md text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="nosotros.html">Misión y Visión</a></li>
-                    <li><a class="font-body-md text-body-md text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="nosotros.html">Política de Privacidad</a></li>
-                    <li><a class="font-body-md text-body-md text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="nosotros.html">Términos Legales</a></li>
-                </ul>
-            </div>
-            <div class="md:col-span-1">
-                <h4 class="font-label-md text-label-md text-white mb-6 uppercase">Contacto</h4>
-                <p class="font-body-md text-body-md text-outline-variant mb-2">Nueva providencia 1945 of 807 Santiago, Chile</p>
-                <p class="font-body-md text-body-md text-outline-variant mb-2">+56 9 7946 3924</p>
-                <p class="font-body-md text-body-md text-outline-variant mb-2">contacto@nexumpartners.cl</p>
-            </div>
-        </div>
-        <div class="max-w-container-max-width mx-auto px-margin-desktop mt-16 pt-8 border-t border-primary-container text-center">
-            <p class="font-label-sm text-label-sm text-outline-variant">
-                © 2026 Nexum Partners. Todos los derechos reservados. Propiedad intelectual de Chile.
-            </p>
-        </div>
-    </footer>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Team Member 1 -->
+<div class="bg-white p-8 rounded-xl border border-outline-variant/30 text-center group hover:shadow-xl transition-all duration-500">
+<div class="w-24 h-24 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="person">person</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Betsaby Calabran</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Socia Fundadora</p>
+<a class="font-label-sm text-label-sm text-primary hover:text-tertiary-fixed-dim transition-colors border-b border-primary" href="mailto:betsaby.calabran@nexumpartners.cl">betsaby.calabran@nexumpartners.cl</a>
+</div>
+<!-- Team Member 2 -->
+<div class="bg-white p-8 rounded-xl border border-outline-variant/30 text-center group hover:shadow-xl transition-all duration-500">
+<div class="w-24 h-24 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="person">person</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Tabata Molina</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Asociada</p>
+<a class="font-label-sm text-label-sm text-primary hover:text-tertiary-fixed-dim transition-colors border-b border-primary" href="mailto:tabata.molina@nexumpartners.cl">tabata.molina@nexumpartners.cl</a>
+</div>
+<!-- Team Member 3 -->
+<div class="bg-white p-8 rounded-xl border border-outline-variant/30 text-center group hover:shadow-xl transition-all duration-500">
+<div class="w-24 h-24 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="person">person</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Valeska Fecci</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Asociada</p>
+<a class="font-label-sm text-label-sm text-primary hover:text-tertiary-fixed-dim transition-colors border-b border-primary" href="mailto:valeska.fecci@nexumpartners.cl">valeska.fecci@nexumpartners.cl</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Values Section - Bento Grid Layout -->
+<section class="py-24 bg-surface-container-low border-t border-outline-variant/20">
+<div class="max-w-container-max-width mx-auto px-margin-desktop">
+<div class="text-center mb-16">
+<span class="font-label-sm text-label-sm text-on-tertiary-container uppercase tracking-widest">Cimientos Institucionales</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-2">Nuestros Valores</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-6 gap-6">
+<!-- Expertise -->
+<div class="md:col-span-3 bg-primary text-on-primary p-8 md:p-12 rounded-xl flex flex-col justify-end group hover:bg-primary-container transition-colors duration-500 border border-primary-container min-h-[320px]">
+<span class="material-symbols-outlined text-4xl mb-6 text-tertiary-fixed-dim" data-icon="school">school</span>
+<h3 class="font-headline-lg text-headline-lg mb-4">Excelencia</h3>
+<p class="font-body-md text-body-md text-on-primary-container">Buscamos la perfección técnica en cada informe, contrato y representación judicial, superando los estándares convencionales del mercado.</p>
+</div>
+<!-- Transparencia -->
+<div class="md:col-span-3 bg-surface-container-lowest p-8 md:p-12 rounded-xl border border-outline-variant/40 flex flex-col justify-center hover:shadow-md transition-all min-h-[320px]">
+<span class="material-symbols-outlined text-4xl mb-6 text-primary" data-icon="transparency">transparency</span>
+<h3 class="font-headline-lg text-headline-lg text-primary mb-4">Ética e Integridad</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Actuamos bajo los más estrictos principios éticos, garantizando total transparencia y honestidad en nuestra relación con los clientes y las instituciones.</p>
+</div>
+<!-- Compromiso -->
+<div class="md:col-span-2 bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/40 hover:border-primary/30 transition-all">
+<span class="material-symbols-outlined text-3xl mb-4 text-primary" data-icon="handshake">handshake</span>
+<h4 class="font-headline-md text-headline-md text-primary mb-2">Compromiso</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Nos involucramos plenamente con los objetivos de nuestros clientes, asumiendo sus desafíos como propios con total dedicación.</p>
+</div>
+<!-- Innovación -->
+<div class="md:col-span-2 bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/40 hover:border-primary/30 transition-all">
+<span class="material-symbols-outlined text-3xl mb-4 text-primary" data-icon="lightbulb">lightbulb</span>
+<h4 class="font-headline-md text-headline-md text-primary mb-2">Innovación</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Adoptamos nuevas tecnologías y enfoques creativos para ofrecer soluciones legales ágiles que se adaptan al mundo moderno.</p>
+</div>
+<!-- Integridad -->
+<div class="md:col-span-2 bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/40 hover:border-primary/30 transition-all">
+<span class="material-symbols-outlined text-3xl mb-4 text-primary" data-icon="gavel">gavel</span>
+<h4 class="font-headline-md text-headline-md text-primary mb-2">Lealtad</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Construimos relaciones a largo plazo basadas en la confianza mutua y la protección incondicional de los intereses de quienes nos eligen.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Counter/Stats Atmospheric Section -->
+<section class="py-20 bg-primary text-on-primary">
+<div class="max-w-container-max-width mx-auto px-margin-desktop grid grid-cols-2 md:grid-cols-4 gap-gutter text-center">
+<div>
+<div class="font-display-lg text-display-lg text-tertiary-fixed-dim">15+</div>
+<div class="font-label-md text-label-md uppercase tracking-widest text-on-primary-container"><div><br></div>Años de Trayectoria de nuestros profesionales</div>
+</div>
+<div>
+<div class="font-display-lg text-display-lg text-tertiary-fixed-dim">500+</div>
+<div class="font-label-md text-label-md uppercase tracking-widest text-on-primary-container"><div><br></div>Casos Exitosos&nbsp;</div>
+</div>
+<div>
+<div class="font-display-lg text-display-lg text-tertiary-fixed-dim">Especialistas</div>
+<div class="font-label-md text-label-md uppercase tracking-widest text-on-primary-container"><div><br></div>DE PRIMER NIVEL</div>
+</div>
+<div>
+<div class="font-display-lg text-display-lg text-tertiary-fixed-dim">Chile</div>
+<div class="font-label-md text-label-md uppercase tracking-widest text-on-primary-container"><div><br></div>Presencia Nacional</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-on-primary-fixed text-on-primary py-16 border-t border-primary-container">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max-width mx-auto">
+<div class="flex flex-col gap-6">
+<img alt="Nexum Partners Logo" class="w-auto object-contain h-\[120px\] object-left h-[120px]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAS92ZLq5W_pJy_tIjhR-HGKFmVc2b3d5t8dWdSnqtLIEDhuvZqQhg8nUhSzoZ95vAfwAE20OwFyNnnOoRvo4EA6SpAk39Qd2riYQLK0H4YBFRvQhvmLqIfQkfmhT-1CZHQW9T2hG67QddGLSw9PSSFokM-Hn3i9RvDu_3aQMSCGPTBLBOu9RwNctXm9PcOIVAE3wg91PrGIIB7P59h5VfKx7vt9bEzeur7uc4VRUrXtob8Ne2pyxjFPW13lZcw0fLfsL7_U9u_oKoF">
+<p class="font-body-md text-body-md text-outline-variant max-w-xs">
+                    Liderando la práctica legal corporativa en Chile con&nbsp;</p><div class="">excelencia e integridad.
+                </div><p></p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-outline cursor-pointer hover:text-tertiary-fixed-dim" data-icon="share">share</span>
+<span class="material-symbols-outlined text-outline cursor-pointer hover:text-tertiary-fixed-dim" data-icon="public">public</span>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-headline-md text-headline-md text-surface-bright mb-2">Áreas de Práctica</h4>
+<a class="font-label-md text-label-md text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="areas-practica.html" style="transform: scale(1);">Derecho Civil y Concursal</a>
+<a class="font-label-md text-label-md text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="areas-practica.html" style="transform: scale(1);">Cobranza Judicial</a>
+<a class="font-label-md text-label-md text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="areas-practica.html">Asesoría Tributaria</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-headline-md text-headline-md text-surface-bright mb-2">Legal</h4>
+<a class="font-label-md text-label-md text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="#" style="transform: scale(1);">Misión y Visión</a>
+<a class="font-label-md text-label-md text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="#" style="transform: scale(1);">Política de Privacidad</a>
+<a class="font-label-md text-label-md text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="#" style="transform: scale(1);">Términos Legales</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-headline-md text-headline-md text-surface-bright mb-2">Contacto</h4>
+<p class="font-body-md text-body-md text-outline-variant">Nueva providencia 1945 of 807 Santiago, Chile</p>
+<p class="font-body-md text-body-md text-outline-variant">+56 9 7946 3924</p>
+<p class="font-body-md text-body-md text-outline-variant">contacto@nexumpartners.cl</p>
+</div>
+</div>
+<div class="max-w-container-max-width mx-auto px-margin-desktop mt-16 pt-8 border-t border-primary-container text-center">
+<p class="font-label-sm text-label-sm text-outline">© 2026 Nexum Partners. Todos los derechos reservados. Propiedad intelectual de Chile.</p>
+</div>
+</footer>
+<!-- Micro-interaction Script -->
+<script>
+        document.querySelectorAll('a, button').forEach(el => {
+            el.addEventListener('mousedown', () => el.style.transform = 'scale(0.98)');
+            el.addEventListener('mouseup', () => el.style.transform = 'scale(1)');
+            el.addEventListener('mouseleave', () => el.style.transform = 'scale(1)');
+        });
+    </script>
 
-</body>
-</html>
+
+
+
+</body></html>

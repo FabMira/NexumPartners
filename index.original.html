@@ -1,0 +1,377 @@
+<!DOCTYPE html><html class="light" lang="es" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&amp;family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(26, 43, 60, 0.7), rgba(26, 43, 60, 0.9));
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#1a2b3c",
+                        "on-primary": "#ffffff",
+                        "primary-container": "#2c3e50",
+                        "on-primary-container": "#d2e4fb",
+                        "secondary": "#545f72",
+                        "on-secondary": "#ffffff",
+                        "secondary-container": "#d5e0f7",
+                        "on-secondary-container": "#586377",
+                        "tertiary": "#1f1300",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-container": "#392700",
+                        "on-tertiary-container": "#af8c47",
+                        "error": "#ba1a1a",
+                        "on-error": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-error-container": "#93000a",
+                        "background": "#f8f9fa",
+                        "on-background": "#191c1d",
+                        "surface": "#f8f9fa",
+                        "on-surface": "#191c1d",
+                        "surface-variant": "#e1e3e4",
+                        "on-surface-variant": "#44474c",
+                        "outline": "#74777d",
+                        "outline-variant": "#c4c6cd",
+                        "inverse-surface": "#2e3132",
+                        "inverse-on-surface": "#f0f1f2",
+                        "inverse-primary": "#b7c8de",
+                        "surface-bright": "#f8f9fa",
+                        "surface-dim": "#d9dadb",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-low": "#f3f4f5",
+                        "surface-container": "#edeeef",
+                        "surface-container-high": "#e7e8e9",
+                        "surface-container-highest": "#e1e3e4",
+                        "tertiary-fixed-dim": "#e9c176"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-tablet": "32px",
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "container-max-width": "1280px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Manrope"],
+                        "headline-md": ["EB Garamond"],
+                        "headline-lg-mobile": ["EB Garamond"],
+                        "body-md": ["Manrope"],
+                        "label-sm": ["Manrope"],
+                        "headline-lg": ["EB Garamond"],
+                        "display-lg": ["EB Garamond"],
+                        "label-md": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "1.4", "letterSpacing": "0.08em", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                        "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "500"}],
+                        "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="sticky top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/30">
+<div class="flex justify-between items-center h-20 px-margin-desktop max-w-container-max-width mx-auto">
+<div class="flex items-center gap-4"><img alt="Nexum Partners Logo" class="w-auto object-contain h-24" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOeYEzwEdZ_t3Lp4Lh1eAnEp7gQGHd0phCokjmzw0fq3EkBSmfPpm26NFq89BL3ZicYELpkdJq9s47cIUFdEx7VvaWM6QRRJJ3EqMK_IUcwlG7fur72QyLm-WN3Vx6MDDFz4j8AGf8HGDARI8fUoGP8EIarMcEBtbf_IxNbkwntAXJLlb1AeHUXsNEkcUubY8FReRu_sjz43D1XXVkNN6Mdx4L67fcGVe7GERYy6Lws-Pz-Txvl8uYZIOvz_ySPyiZZn7Esi42oER3"></div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-label-md text-label-md text-primary border-b border-primary pb-1 transition-colors duration-300" href="#">Inicio</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Nosotros</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Áreas de Práctica</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Contacto</a>
+</nav>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-md text-label-md hover:bg-primary-container transition-all duration-300 active:scale-95">
+                Consulta
+            </button>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative h-[80vh] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Palacio de Tribunales de Justicia Chile" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0ujMM54PQzIhNYDZ4M1kqSeFO3D41IVLfU2FWNf-LWyYLCLhpfxA2CO4Sa8QJCbIxTT8ec18N-AGCuQiXVE7SjQzAQpdNtOZjyyy1mNikWxHUPXDZFGYkkjh-NZtA9amQAStGJNS1oyjc-YjdHff9DhH4L2ZoAOlMluyUjndsbEZn5XFqtrF6E45NFdGxzYxrp8i9C1kL5jhrnt8MWFKuiWK3Sa_d_tBokHX5ns5eoVLnnWh6r8Mx5RVe9U">
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 max-w-container-max-width mx-auto px-margin-desktop w-full">
+<div class="max-w-3xl">
+<div class="w-16 h-1 bg-tertiary-fixed-dim mb-8"></div>
+<h2 class="font-display-lg text-display-lg text-white mb-6 leading-tight">
+                    Excelencia Jurídica e <br><span class="italic font-light">Innovación Basada en Datos</span>
+</h2>
+<p class="font-body-lg text-body-lg text-on-primary-container mb-10 max-w-xl">
+                    Liderando el futuro del derecho en Chile mediante la integración de experiencia legal y analítica avanzada para resultados estratégicos.
+                </p>
+<div class="flex gap-4">
+<button class="bg-surface-container-lowest text-primary px-8 py-4 font-label-md text-label-md hover:bg-surface transition-colors">
+                        CONOCER MÁS
+                    </button>
+<button class="border border-white text-white px-8 py-4 font-label-md text-label-md hover:bg-white/10 transition-colors">
+                        ÁREAS DE PRÁCTICA
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Misión y Visión Section (Bento Layout) -->
+<section class="py-24 px-margin-desktop max-w-container-max-width mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-stretch">
+<!-- Headline Column -->
+<div class="md:col-span-4 flex flex-col justify-center">
+<span class="font-label-sm text-label-sm text-tertiary-fixed-dim uppercase mb-4 tracking-[0.2em]">Nuestro Propósito</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Compromiso con la Excelencia y la Innovación</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    En Nexum Partners, transformamos la práctica legal en un motor de crecimiento estratégico para nuestros clientes.
+                </p>
+</div>
+<!-- Mission Card -->
+<div class="md:col-span-4 p-10 bg-white border border-outline-variant/30 hover:border-tertiary-fixed-dim transition-colors group" style="transform: translateY(0px);">
+<div class="mb-8">
+<span class="material-symbols-outlined text-4xl text-primary group-hover:scale-110 transition-transform duration-300">verified</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">MISIÓN</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                    Brindar a personas y empresas un servicio jurídico integral, ágil y de alta calidad en todas las áreas del derecho, combinando el conocimiento especializado de nuestros profesionales con tecnología y gestión basada en datos, para entregar soluciones efectivas, transparentes y orientadas a resultados en cada proceso judicial o extrajudicial que nuestros clientes nos confíen.
+                </p>
+</div>
+<!-- Vision Card -->
+<div class="md:col-span-4 p-10 bg-primary text-on-primary">
+<div class="mb-8">
+<span class="material-symbols-outlined text-4xl text-tertiary-fixed-dim">visibility</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-white mb-4">VISIÓN</h3>
+<p class="font-body-md text-body-md text-on-primary-container leading-relaxed">
+                    Ser la firma de servicios jurídicos de referencia en Chile, reconocida por la excelencia profesional, la innovación en la gestión legal y el compromiso genuino con los resultados de nuestros clientes, abarcando desde el derecho civil, comercial y laboral hasta procesos de reorganización, insolvencia y litigación compleja.
+                </p>
+</div>
+</div>
+</section>
+<!-- Featured Practice Areas (Grid) -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-container-max-width mx-auto px-margin-desktop">
+<div class="flex justify-between items-end mb-16">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase mb-4 block">Especialidades</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">8 Áreas de Práctica</h2>
+</div>
+<a class="font-label-md text-label-md text-primary border-b border-primary hover:text-on-surface-variant hover:border-on-surface-variant transition-colors" href="#">VER TODAS</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Practice 1 -->
+<div class="bg-white p-8 border border-outline-variant/20 group hover:shadow-xl transition-all duration-500">
+<span class="material-symbols-outlined text-3xl text-primary mb-6">corporate_fare</span>
+<h4 class="font-headline-md text-headline-md text-primary mb-4">Derecho Corporativo</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Asesoría integral en fusiones, adquisiciones y estructuración societaria.</p>
+<a class="flex items-center gap-2 font-label-md text-label-md text-primary group-hover:gap-4 transition-all" href="#">VER MÁS <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<!-- Practice 2 -->
+<div class="bg-white p-8 border border-outline-variant/20 group hover:shadow-xl transition-all duration-500" style="transform: translateY(0px);">
+<span class="material-symbols-outlined text-3xl text-primary mb-6">gavel</span>
+<h4 class="font-headline-md text-headline-md text-primary mb-4">Litigación Compleja</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Estrategias procesales de alta complejidad en tribunales superiores.</p>
+<a class="flex items-center gap-2 font-label-md text-label-md text-primary group-hover:gap-4 transition-all" href="#">VER MÁS <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<!-- Practice 3 -->
+<div class="bg-white p-8 border border-outline-variant/20 group hover:shadow-xl transition-all duration-500">
+<span class="material-symbols-outlined text-3xl text-primary mb-6">balance</span>
+<h4 class="font-headline-md text-headline-md text-primary mb-4">Derecho Civil</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Resolución de conflictos contractuales, responsabilidad y propiedad.</p>
+<a class="flex items-center gap-2 font-label-md text-label-md text-primary group-hover:gap-4 transition-all" href="#">VER MÁS <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<!-- Practice 4 -->
+<div class="bg-white p-8 border border-outline-variant/20 group hover:shadow-xl transition-all duration-500">
+<span class="material-symbols-outlined text-3xl text-primary mb-6">work_history</span>
+<h4 class="font-headline-md text-headline-md text-primary mb-4">Derecho Laboral</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Asesoría corporativa en relaciones laborales y cumplimiento normativo.</p>
+<a class="flex items-center gap-2 font-label-md text-label-md text-primary group-hover:gap-4 transition-all" href="#">VER MÁS <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<!-- Practice 5 -->
+<div class="bg-white p-8 border border-outline-variant/20 group hover:shadow-xl transition-all duration-500" style="transform: translateY(0px);">
+<span class="material-symbols-outlined text-3xl text-primary mb-6">account_balance_wallet</span>
+<h4 class="font-headline-md text-headline-md text-primary mb-4">Derecho Comercial</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Regulación de actos de comercio y contratos mercantiles nacionales.</p>
+<a class="flex items-center gap-2 font-label-md text-label-md text-primary group-hover:gap-4 transition-all" href="#">VER MÁS <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<!-- Practice 6 -->
+<div class="bg-white p-8 border border-outline-variant/20 group hover:shadow-xl transition-all duration-500" style="transform: translateY(0px);">
+<span class="material-symbols-outlined text-3xl text-primary mb-6">domain_disabled</span>
+<h4 class="font-headline-md text-headline-md text-primary mb-4">Insolvencia</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Reorganización y liquidación de empresas bajo la nueva ley 20.720.</p>
+<a class="flex items-center gap-2 font-label-md text-label-md text-primary group-hover:gap-4 transition-all" href="#">VER MÁS <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<!-- Practice 7 -->
+<div class="bg-white p-8 border border-outline-variant/20 group hover:shadow-xl transition-all duration-500" style="transform: translateY(0px);">
+<span class="material-symbols-outlined text-3xl text-primary mb-6">monitoring</span>
+<h4 class="font-headline-md text-headline-md text-primary mb-4">Derecho Tributario</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Planificación fiscal eficiente y defensa ante el SII y TTA.</p>
+<a class="flex items-center gap-2 font-label-md text-label-md text-primary group-hover:gap-4 transition-all" href="#">VER MÁS <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<!-- Practice 8 -->
+<div class="bg-white p-8 border border-outline-variant/20 group hover:shadow-xl transition-all duration-500" style="transform: translateY(0px);">
+<span class="material-symbols-outlined text-3xl text-primary mb-6">handshake</span>
+<h4 class="font-headline-md text-headline-md text-primary mb-4">Negociación</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Métodos alternativos de resolución de conflictos y mediación.</p>
+<a class="flex items-center gap-2 font-label-md text-label-md text-primary group-hover:gap-4 transition-all" href="#">VER MÁS <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Us Section (Asymmetric) -->
+<section class="py-24 px-margin-desktop max-w-container-max-width mx-auto">
+<div class="flex flex-col md:flex-row gap-16 items-center">
+<div class="w-full md:w-1/2 relative">
+<div class="absolute -top-4 -left-4 w-32 h-32 border-t-2 border-l-2 border-primary z-0"></div>
+<img alt="Santiago Financial District" class="relative z-10 grayscale hover:grayscale-0 transition-all duration-700 w-full h-[600px] object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0uhnk0LepRAbye8bsELTeqcxtVCH2Vl36KDFC4kY8bONQaN3VRB95ytz0CXMuuPPlgldC9dFHnvt1-re5QJYJ44UV0PZZ38C_KdxKmjkRXrW-nHNxBOUFpIp07DYQKMLD_iDIqqixGmcoOqTZ3WWhZBFec5C7xj5nwqVJIQiomjBJRfZICVeH9JdsEaql6Kot09iEKY0vqNm23tjjGKydpdxSL8awy70w11yNqCSXuUgKF8T4Vz88Cw2y08">
+</div>
+<div class="w-full md:w-1/2">
+<span class="font-label-sm text-label-sm text-primary uppercase mb-4 block">El Diferencial Nexum</span>
+<h2 class="font-display-lg text-display-lg text-primary mb-8">Presencia en el Corazón Financiero</h2>
+<div class="space-y-10">
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">leaderboard</span>
+</div>
+<div>
+<h5 class="font-label-md text-label-md text-primary mb-2 uppercase">Precisión Analítica</h5>
+<p class="font-body-md text-body-md text-on-surface-variant">Utilizamos modelos predictivos para evaluar probabilidades de éxito en litigios y negociaciones.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">public</span>
+</div>
+<div>
+<h5 class="font-label-md text-label-md text-primary mb-2 uppercase">Alcance Nacional</h5>
+<p class="font-body-md text-body-md text-on-surface-variant">Operamos con base en Santiago brindando cobertura estratégica en todo Chile.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">shield_person</span>
+</div>
+<div>
+<h5 class="font-label-md text-label-md text-primary mb-2 uppercase">Ética y Transparencia</h5>
+<p class="font-body-md text-body-md text-on-surface-variant">Reportabilidad constante y acceso total a la información de sus causas en tiempo real.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-primary py-16">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max-width mx-auto">
+<!-- Brand Column -->
+<div class="md:col-span-1">
+<img alt="Nexum Partners Logo" class="w-auto object-contain mb-6 invert brightness-0 hover:brightness-100 transition-all h-24" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtdJ2SQs-sVTvND3bsdXPQfWHPRN6Spbdc3Yf7cYMcGYzD1YUbibCMsvUcckMX9NmFMQPQUIS4_5WwIkl2hPgWDOOwwdtKuyMGDw3c94ywbMSM82kpgzB97K-51j303WOLKj0YsmiiWDjQsP20Be9AYblEyRGeiinl7VcBXLbQwIp-d9tpK4HV-NV2BtsAgfIgsEswmVTTJz41aWzQy3Hnw2AQ-Lr2JZzc5db0CNb2eOjsoMIngN2ENqWH9tJmaqHJcILLP0fFmIA4">
+<p class="font-body-md text-body-md text-on-primary-container mb-8">
+                    Elevando el estándar de la asesoría legal en la era digital chilena.
+                </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-on-primary-container flex items-center justify-center text-on-primary-container hover:text-white hover:border-white transition-colors" href="#"><span class="material-symbols-outlined text-sm">share</span></a>
+<a class="w-10 h-10 rounded-full border border-on-primary-container flex items-center justify-center text-on-primary-container hover:text-white hover:border-white transition-colors" href="#"><span class="material-symbols-outlined text-sm">groups</span></a>
+</div>
+</div>
+<!-- Links 1 -->
+<div class="md:col-span-1">
+<h4 class="font-label-md text-label-md text-white mb-6 uppercase">Práctica</h4>
+<ul class="space-y-4">
+<li class=""><a class="font-body-md text-body-md text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="#">Corporativo</a></li>
+<li class=""><a class="font-body-md text-body-md text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="#">Litigación</a></li>
+<li class=""><a class="font-body-md text-body-md text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="#">Insolvencia</a></li>
+<li class=""><a class="font-body-md text-body-md text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="#">Tributario</a></li>
+</ul>
+</div>
+<!-- Links 2 -->
+<div class="md:col-span-1">
+<h4 class="font-label-md text-label-md text-white mb-6 uppercase">Empresa</h4>
+<ul class="space-y-4">
+<li class=""><a class="font-body-md text-body-md text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="#">Misión y Visión</a></li>
+<li class=""><a class="font-body-md text-body-md text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="#">Políticas de Privacidad</a></li>
+<li class=""><a class="font-body-md text-body-md text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="#">Nuestro Equipo</a></li>
+<li class=""><a class="font-body-md text-body-md text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="#">Carreras</a></li>
+</ul>
+</div>
+<!-- Contact Column -->
+<div class="md:col-span-1">
+<h4 class="font-label-md text-label-md text-white mb-6 uppercase">Contacto</h4>
+<p class="font-body-md text-body-md text-on-primary-container mb-4">Nueva providencia 1945 of 807 Santiago, Chile
+                </p>
+<p class="font-body-md text-body-md text-on-primary-container mb-4">
+                    contacto@nexumpartners.cl
+                </p><p class="font-body-md text-body-md text-on-primary-container mb-4">+56 9 7946 3924</p>
+<p class="font-display-lg text-[24px] text-tertiary-fixed-dim font-headline-md"><br></p>
+</div>
+</div>
+<div class="mt-16 pt-8 border-t border-primary-container px-margin-desktop max-w-container-max-width mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-label-sm text-label-sm text-outline-variant">
+                © 2026 Nexum Partners. Todos los derechos reservados. Santiago, Chile.
+            </p>
+<div class="flex gap-8">
+<a class="font-label-sm text-label-sm text-outline-variant hover:text-white transition-colors" href="#">Términos</a>
+<a class="font-label-sm text-label-sm text-outline-variant hover:text-white transition-colors" href="#">Privacidad</a>
+</div>
+</div>
+</footer>
+<!-- Interactive Layer: Smooth Scroll Script -->
+<script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Atmospheric Micro-interaction for Cards
+        const cards = document.querySelectorAll('.bg-white');
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-4px)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+
+
+</body></html>
