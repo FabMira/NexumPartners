@@ -1,220 +1,379 @@
 <!DOCTYPE html>
-<html class="light" lang="es">
-<head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Contacto | Nexum Partners</title>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <script src="assets/js/config.js"></script>
+
+<html class="light" lang="es"><head>
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&amp;family=Manrope:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-primary": "#b7c8de",
+                    "secondary": "#545f72",
+                    "outline-variant": "#c4c6cd",
+                    "inverse-surface": "#2e3132",
+                    "on-secondary": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "outline": "#74777d",
+                    "primary-fixed-dim": "#b7c8de",
+                    "on-primary-fixed": "#0b1d2d",
+                    "on-error-container": "#93000a",
+                    "surface-container-lowest": "#ffffff",
+                    "error": "#ba1a1a",
+                    "surface-container-low": "#f3f4f5",
+                    "on-surface-variant": "#44474c",
+                    "tertiary-fixed-dim": "#e9c176",
+                    "on-tertiary-fixed-variant": "#5d4201",
+                    "on-surface": "#191c1d",
+                    "secondary-fixed": "#d8e3fa",
+                    "error-container": "#ffdad6",
+                    "surface-container-highest": "#e1e3e4",
+                    "inverse-on-surface": "#f0f1f2",
+                    "surface-tint": "#4f6073",
+                    "on-tertiary-container": "#af8c47",
+                    "on-secondary-fixed-variant": "#3c475a",
+                    "on-primary-container": "#8192a7",
+                    "tertiary-fixed": "#ffdea5",
+                    "on-tertiary-fixed": "#261900",
+                    "on-secondary-container": "#586377",
+                    "primary": "#041627",
+                    "surface-dim": "#d9dadb",
+                    "surface-container": "#edeeef",
+                    "secondary-fixed-dim": "#bcc7dd",
+                    "on-secondary-fixed": "#111c2c",
+                    "surface-variant": "#e1e3e4",
+                    "secondary-container": "#d5e0f7",
+                    "on-primary-fixed-variant": "#38485a",
+                    "on-background": "#191c1d",
+                    "tertiary-container": "#392700",
+                    "primary-container": "#1a2b3c",
+                    "on-error": "#ffffff",
+                    "surface-bright": "#f8f9fa",
+                    "primary-fixed": "#d2e4fb",
+                    "background": "#f8f9fa",
+                    "surface": "#f8f9fa",
+                    "tertiary": "#1f1300",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-high": "#e7e8e9"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "container-max-width": "1280px",
+                    "gutter": "24px",
+                    "unit": "8px",
+                    "margin-tablet": "32px",
+                    "margin-desktop": "64px",
+                    "margin-mobile": "20px"
+            },
+            "fontFamily": {
+                    "label-md": ["Manrope"],
+                    "display-lg": ["EB Garamond"],
+                    "body-md": ["Manrope"],
+                    "body-lg": ["Manrope"],
+                    "label-sm": ["Manrope"],
+                    "headline-lg": ["EB Garamond"],
+                    "headline-lg-mobile": ["EB Garamond"],
+                    "headline-md": ["EB Garamond"]
+            },
+            "fontSize": {
+                    "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "1.4", "letterSpacing": "0.08em", "fontWeight": "700"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #f8f9fa;
+            color: #191c1d;
+            scroll-behavior: smooth;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-gradient {
+            background: linear-gradient(rgba(4, 22, 39, 0.8), rgba(4, 22, 39, 0.6));
+        }
+    </style>
 </head>
-<body class="bg-surface text-on-surface font-body-md">
-
-    <!-- Header -->
-    <header class="sticky top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/30">
-        <div class="flex justify-between items-center h-20 px-margin-desktop max-w-container-max-width mx-auto">
-            <a href="index.html" class="flex items-center gap-4">
-                <img alt="Nexum Partners Logo" class="w-auto object-contain h-24" src="assets/img/logo-header.png">
-            </a>
-            <nav class="hidden md:flex items-center gap-8">
-                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="index.html">Inicio</a>
-                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="nosotros.html">Nosotros</a>
-                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="areas-practica.html">Áreas de Práctica</a>
-                <a class="font-label-md text-label-md text-primary border-b border-primary pb-1" href="contacto.html">Contacto</a>
-            </nav>
-            <a href="contacto.html" class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-md text-label-md hover:bg-primary-container transition-all duration-300 active:scale-95">
+<body class="font-body-md text-body-md">
+<!-- Top Navigation Bar -->
+<header class="bg-surface sticky top-0 z-50 border-b border-outline-variant/30">
+<nav class="flex justify-between items-center w-full px-margin-desktop py-6 max-w-container-max-width mx-auto">
+<div class="flex items-center gap-4">
+<img alt="Nexum Partners Logo" class="h-16 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AP1WRLtsYEtsUZ13lIRgt0XjW0wMtSmt4ft-KS2RFC15PTO_wduwYnA4yfCoLxpjxioE5mYs11jTmKrCkd9Ue8zdtLm-RAPzOoeTialLpClPaD5m70_8LV2FI3Vphw1MfkNRbTiTc1UmprXGoZA4tipwM8RYo7p3IQmZgCtriqLjzFA6tgyRJGVTGgRy82_EFiTAjQxR-nPF7ebF7m3H7fKMtOGr2Ko9Sdy4U9dkPUXOyBjdp21F5_cP-_-lE0dZ"/>
+<span class="font-display-lg text-headline-md font-medium text-primary tracking-tight">Nexum Partners</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-secondary hover:text-primary transition-colors font-label-md text-label-md" href="index.html">Inicio</a>
+<a class="text-secondary hover:text-primary transition-colors font-label-md text-label-md" href="nosotros.html">Nosotros</a>
+<a class="text-secondary hover:text-primary transition-colors font-label-md text-label-md" href="areas-practica.html">Áreas de Práctica</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-md text-label-md" href="contacto.html">Contacto</a>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-DEFAULT font-label-md text-label-md hover:bg-primary-container transition-all Active:opacity-80 shadow-sm">
                 Consulta
-            </a>
-        </div>
-    </header>
-
-    <main class="max-w-container-max-width mx-auto px-margin-desktop py-20">
-        <!-- Hero -->
-        <section class="mb-20 text-center md:text-left">
-            <span class="text-on-tertiary-container font-label-sm text-label-sm uppercase tracking-widest mb-4 block">Establezca una Alianza</span>
-            <h1 class="font-display-lg text-display-lg text-primary mb-6">Contacte con Nexum Partners</h1>
-            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
-                Ofrecemos asesoría legal de élite diseñada para la complejidad corporativa moderna. Nuestro equipo en Santiago está listo para proteger sus intereses globales.
-            </p>
-        </section>
-
-        <!-- Form + Info Bento -->
-        <div class="grid grid-cols-12 gap-gutter">
-            <!-- Form -->
-            <div class="col-span-12 lg:col-span-7 bg-surface-container-lowest p-10 border border-outline-variant/30 rounded-lg shadow-sm">
-                <h2 class="font-headline-md text-headline-md text-primary mb-8">Formulario de Consulta Profesional</h2>
-                <form class="space-y-8" id="contacto-form">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div class="flex flex-col gap-2">
-                            <label class="font-label-sm text-label-sm text-outline" for="nombre">NOMBRE COMPLETO</label>
-                            <input id="nombre" class="bg-transparent border-0 border-b border-outline-variant py-2 transition-all text-body-md focus:ring-0 focus:border-primary" placeholder="Juan Pérez" type="text" name="nombre" required>
-                        </div>
-                        <div class="flex flex-col gap-2">
-                            <label class="font-label-sm text-label-sm text-outline" for="email">EMAIL CORPORATIVO</label>
-                            <input id="email" class="bg-transparent border-0 border-b border-outline-variant py-2 transition-all text-body-md focus:ring-0 focus:border-primary" placeholder="jperez@empresa.com" type="email" name="email" required>
-                        </div>
-                    </div>
-                    <div class="flex flex-col gap-2">
-                        <label class="font-label-sm text-label-sm text-outline" for="area">ÁREA DE INTERÉS</label>
-                        <select id="area" class="bg-transparent border-0 border-b border-outline-variant py-2 transition-all text-body-md focus:ring-0 focus:border-primary appearance-none" name="area">
-                            <option disabled selected>Seleccione una especialidad</option>
-                            <option>Derecho Civil</option>
-                            <option>Derecho Comercial</option>
-                            <option>Derecho Laboral</option>
-                            <option>Derecho de Familia</option>
-                            <option>Derecho Tributario</option>
-                            <option>Derecho Concursal y Ley 20.720</option>
-                            <option>Cobranza Judicial</option>
-                            <option>Litigación y Arbitraje</option>
-                        </select>
-                    </div>
-                    <div class="flex flex-col gap-2">
-                        <label class="font-label-sm text-label-sm text-outline" for="mensaje">MENSAJE</label>
-                        <textarea id="mensaje" class="bg-transparent border-0 border-b border-outline-variant py-2 transition-all text-body-md focus:ring-0 focus:border-primary resize-none" placeholder="Describa brevemente su requerimiento legal..." rows="4" name="mensaje" required></textarea>
-                    </div>
-                    <div class="pt-4">
-                        <button class="bg-primary text-on-primary px-10 py-4 rounded-lg font-label-md text-label-md hover:shadow-lg transition-all flex items-center gap-3" type="submit">
-                            ENVIAR CONSULTA
-                            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
-                        </button>
-                    </div>
-                </form>
-            </div>
-
-            <!-- Info Column -->
-            <div class="col-span-12 lg:col-span-5 flex flex-col gap-gutter">
-                <!-- Contact Details -->
-                <div class="bg-primary text-on-primary p-8 rounded-lg">
-                    <h3 class="font-headline-md text-headline-md mb-6">Información Directa</h3>
-                    <div class="space-y-6">
-                        <div class="flex items-start gap-4">
-                            <span class="material-symbols-outlined text-tertiary-fixed-dim">call</span>
-                            <div>
-                                <p class="font-label-sm text-label-sm opacity-60">LÍNEA CORPORATIVA</p>
-                                <p class="font-body-lg text-body-lg">+56 9 7946 3924</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <span class="material-symbols-outlined text-tertiary-fixed-dim">mail</span>
-                            <div>
-                                <p class="font-label-sm text-label-sm opacity-60">CONSULTAS GENERALES</p>
-                                <p class="font-body-lg text-body-lg">contacto@nexumpartners.cl</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <span class="material-symbols-outlined text-tertiary-fixed-dim">schedule</span>
-                            <div>
-                                <p class="font-label-sm text-label-sm opacity-60">HORARIO DE ATENCIÓN</p>
-                                <p class="font-body-lg text-body-lg">Lun — Vie: 09:00 - 18:00</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Map Card -->
-                <div class="relative flex-1 min-h-[300px] rounded-lg overflow-hidden border border-outline-variant/30 group">
-                    <img alt="Ubicación Oficina Santiago" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/img/map-office.jpg">
-                    <div class="absolute inset-0 bg-primary/20 group-hover:bg-primary/10 transition-colors duration-500"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6 bg-surface/90 backdrop-blur-sm border-t border-outline-variant/30">
-                        <div class="flex items-center gap-3 mb-1">
-                            <span class="material-symbols-outlined text-primary">location_on</span>
-                            <span class="font-label-md text-label-md text-primary">SANTIAGO, CHILE</span>
-                        </div>
-                        <p class="font-body-md text-body-md text-on-surface-variant">Nueva providencia 1945 of 807<br>Santiago, Región Metropolitana</p>
-                    </div>
-                    <a class="absolute top-4 right-4 bg-surface text-primary p-3 rounded-full shadow-lg hover:bg-primary hover:text-on-primary transition-all" href="https://maps.google.com" target="_blank" rel="noopener">
-                        <span class="material-symbols-outlined">open_in_new</span>
+            </button>
+</nav>
+</header>
+<main>
+<!-- Contact Hero Section -->
+<section class="relative h-[400px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Nexum Partners Santiago Office" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLtCYilr_BtGdIeLzGs-__SGQAslOhUAnGQHE9BubwIuLXi2Muigs823vLXP4cB2gBfQiOTLZU_hK0wPOD9Ml98X0tCnjWGdNS1osE2Qv8KEtIVIihzfCYDRhA9WRoLc9tnKqTfDkqBpoSosMFjGbp7Mv8yzOk3xo_V2rphgUy4bb2vuaAkLjd5Cmkdn5piUXmZ4HxeG8o9hOeBtoHq8vq0tW-wXNm1UayRc4CPdNwHtmI3SWBp7UGqXZt8"/>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 w-full px-margin-desktop max-w-container-max-width mx-auto text-on-primary">
+<div class="max-w-2xl">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-tertiary-fixed mb-4 block">Asesoría Legal de Excelencia</span>
+<h1 class="font-display-lg text-display-lg mb-6">Contáctenos</h1>
+<p class="font-body-lg text-body-lg opacity-90 leading-relaxed">
+                        Estamos a su disposición para brindarle soluciones legales estratégicas en Santiago y el resto de Chile. Inicie una conversación con nuestro equipo de expertos hoy mismo.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Main Contact Grid -->
+<section class="py-20 px-margin-desktop max-w-container-max-width mx-auto">
+<div class="grid grid-cols-12 gap-gutter">
+<!-- Contact Info Column -->
+<div class="col-span-12 lg:col-span-4 space-y-12">
+<div>
+<h2 class="font-headline-md text-headline-md text-primary mb-8">Información de Contacto</h2>
+<div class="space-y-8">
+<!-- Location -->
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="location_on">location_on</span>
+<div>
+<h4 class="font-label-md text-label-md text-primary mb-1">Dirección</h4>
+<p class="text-secondary leading-relaxed">Av. Andrés Bello 2711, Piso 12<br/>Las Condes, Santiago, Chile</p>
+</div>
+</div>
+<!-- Email -->
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="mail">mail</span>
+<div>
+<h4 class="font-label-md text-label-md text-primary mb-1">Correo Electrónico</h4>
+<a class="text-primary font-semibold hover:text-tertiary transition-colors" href="mailto:contacto@nexumpartners.cl">contacto@nexumpartners.cl</a>
+</div>
+</div>
+<!-- Phone -->
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="phone">phone</span>
+<div>
+<h4 class="font-label-md text-label-md text-primary mb-1">Teléfono</h4>
+<p class="text-secondary">+56 9 7946 3924</p>
+</div>
+</div>
+<!-- Hours -->
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="schedule">schedule</span>
+<div>
+<h4 class="font-label-md text-label-md text-primary mb-1">Horario de Atención</h4>
+<p class="text-secondary">Lunes a Viernes: 09:00 - 18:30 hrs</p>
+</div>
+</div>
+</div>
+<div class="mt-12 pt-8 border-t border-outline-variant/20">
+<h4 class="font-label-md text-label-md text-primary mb-6">Contacto Directo</h4>
+<div class="space-y-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-sm">person</span>
+<a class="text-secondary hover:text-primary transition-colors" href="mailto:betsaby.calabran@nexumpartners.cl">betsaby.calabran@nexumpartners.cl</a>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-sm">person</span>
+<a class="text-secondary hover:text-primary transition-colors" href="mailto:tabata.molina@nexumpartners.cl">tabata.molina@nexumpartners.cl</a>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-sm">person</span>
+<a class="text-secondary hover:text-primary transition-colors" href="mailto:valeska.fecci@nexumpartners.cl">valeska.fecci@nexumpartners.cl</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Map/Location Image Placeholder -->
+<div class="rounded-lg overflow-hidden border border-outline-variant/30 h-64 grayscale hover:grayscale-0 transition-all duration-700">
+<div class="w-full h-full bg-surface-container relative">
+<img class="w-full h-full object-cover opacity-50" data-location="Santiago, Chile" src="https://lh3.googleusercontent.com/aida/AP1WRLtCYilr_BtGdIeLzGs-__SGQAslOhUAnGQHE9BubwIuLXi2Muigs823vLXP4cB2gBfQiOTLZU_hK0wPOD9Ml98X0tCnjWGdNS1osE2Qv8KEtIVIihzfCYDRhA9WRoLc9tnKqTfDkqBpoSosMFjGbp7Mv8yzOk3xo_V2rphgUy4bb2vuaAkLjd5Cmkdn5piUXmZ4HxeG8o9hOeBtoHq8vq0tW-wXNm1UayRc4CPdNwHtmI3SWBp7UGqXZt8"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="bg-white/90 p-4 shadow-xl rounded-DEFAULT text-center backdrop-blur-sm border border-primary/10">
+<span class="material-symbols-outlined text-primary text-3xl mb-1 block" data-icon="pin_drop">pin_drop</span>
+<span class="font-label-md text-label-md text-primary">Santiago Corporate District</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Contact Form Column -->
+<div class="col-span-12 lg:col-span-8 bg-white p-12 rounded-lg border border-outline-variant/20 shadow-sm">
+<h3 class="font-display-lg text-headline-lg text-primary mb-2">Formulario de Consulta</h3>
+<p class="text-secondary mb-10 font-body-md">Complete los siguientes campos y un abogado de nuestro equipo se pondrá en contacto con usted a la brevedad.</p>
+<form action="#" class="space-y-6" method="POST">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-primary" for="first_name">Nombre</label>
+<input class="w-full border-0 border-b border-outline-variant focus:border-primary focus:ring-0 px-0 py-3 transition-colors bg-transparent" id="first_name" name="first_name" placeholder="Su nombre" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-primary" for="last_name">Apellido</label>
+<input class="w-full border-0 border-b border-outline-variant focus:border-primary focus:ring-0 px-0 py-3 transition-colors bg-transparent" id="last_name" name="last_name" placeholder="Su apellido" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-primary" for="email">Correo Corporativo</label>
+<input class="w-full border-0 border-b border-outline-variant focus:border-primary focus:ring-0 px-0 py-3 transition-colors bg-transparent" id="email" name="email" placeholder="ejemplo@empresa.cl" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-primary" for="phone">Teléfono</label>
+<input class="w-full border-0 border-b border-outline-variant focus:border-primary focus:ring-0 px-0 py-3 transition-colors bg-transparent" id="phone" name="phone" placeholder="+56 9 ..." type="tel"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-primary" for="practice_area">Área de Interés</label>
+<select class="w-full border-0 border-b border-outline-variant focus:border-primary focus:ring-0 px-0 py-3 transition-colors bg-transparent appearance-none" id="practice_area" name="practice_area">
+<option value="">Seleccione un área de práctica</option>
+<option value="corporativo">Derecho Corporativo</option>
+<option value="litigacion">Litigación</option>
+<option value="inmobiliario">Inmobiliario</option>
+<option value="tributario">Asesoría Tributaria</option>
+<option value="otro">Otro</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-primary" for="message">Detalle de su Consulta</label>
+<textarea class="w-full border-0 border-b border-outline-variant focus:border-primary focus:ring-0 px-0 py-3 transition-colors bg-transparent resize-none" id="message" name="message" placeholder="Escriba aquí los detalles de su requerimiento legal..." rows="4"></textarea>
+</div>
+<div class="pt-6">
+<button class="group flex items-center justify-center gap-3 bg-primary text-on-primary w-full md:w-auto px-12 py-4 rounded-DEFAULT font-label-md text-label-md hover:bg-primary-container transition-all shadow-md" type="submit">
+                                Enviar Consulta Profesional
+                                <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<p class="text-[11px] text-outline mt-4 leading-relaxed">
+                                Al enviar este formulario, usted acepta nuestra política de privacidad. Su información será tratada con estricta confidencialidad.
+                            </p>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- Newsletter / Quick Link -->
+<section class="bg-primary text-on-primary py-16">
+<div class="px-margin-desktop max-w-container-max-width mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="text-center md:text-left">
+<h4 class="font-headline-md text-headline-md mb-2">Compromiso con la Excelencia</h4>
+<p class="font-body-md opacity-80">Asesoría jurídica moderna para los desafíos corporativos de hoy.</p>
+</div>
+<div class="h-[1px] w-full md:w-32 bg-on-primary/20 hidden md:block"></div>
+<div class="flex items-center gap-6">
+<a class="flex items-center gap-3 font-label-md text-label-md border border-on-primary/30 px-6 py-3 rounded-DEFAULT hover:bg-on-primary/10 transition-colors" href="mailto:contacto@nexumpartners.cl">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+                        contacto@nexumpartners.cl
                     </a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Secondary Info -->
-        <section class="mt-24 grid grid-cols-1 md:grid-cols-3 gap-gutter">
-            <div class="p-8 border-l border-tertiary-fixed-dim">
-                <h4 class="font-label-md text-label-md text-primary mb-3">CONTRATACIONES</h4>
-                <p class="font-body-md text-body-md text-on-surface-variant">¿Busca unirse a nuestro equipo de expertos? Envíe su CV a contacto@nexumpartners.cl</p>
-            </div>
-            <div class="p-8 border-l border-tertiary-fixed-dim">
-                <h4 class="font-label-md text-label-md text-primary mb-3">PRENSA</h4>
-                <p class="font-body-md text-body-md text-on-surface-variant">Para requerimientos de medios y publicaciones legales: contacto@nexumpartners.cl</p>
-            </div>
-            <div class="p-8 border-l border-tertiary-fixed-dim">
-                <h4 class="font-label-md text-label-md text-primary mb-3">CUMPLIMIENTO</h4>
-                <p class="font-body-md text-body-md text-on-surface-variant">Nuestro canal ético y consultas están disponibles en el horario de atención establecido.</p>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-primary py-16">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max-width mx-auto">
-            <div class="md:col-span-1">
-                <img alt="Nexum Partners Logo" class="w-auto object-contain mb-6 h-24 footer-logo" src="assets/img/logo-header.png">
-                <p class="font-body-md text-body-md text-outline-variant mb-8">
-                    Firmando el futuro de la asesoría legal corporativa. Excelencia técnica y visión estratégica desde el corazón financiero de Santiago.
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary border-t border-outline-variant/10">
+<div class="w-full px-margin-desktop py-20 max-w-container-max-width mx-auto grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="space-y-6">
+<div class="flex items-center gap-2">
+<span class="font-display-lg text-headline-md text-on-primary">Nexum Partners</span>
+</div>
+<p class="text-secondary-fixed-dim text-body-md leading-relaxed">
+                    Firma boutique especializada en derecho corporativo y estratégico, con foco en resultados de alto impacto.
                 </p>
-            </div>
-            <div class="md:col-span-1">
-                <h4 class="font-label-md text-label-md text-white mb-6 uppercase">Servicios</h4>
-                <ul class="space-y-4">
-                    <li><a class="font-body-md text-body-md text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="areas-practica.html">Derecho Corporativo</a></li>
-                    <li><a class="font-body-md text-body-md text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="areas-practica.html">Litigios</a></li>
-                    <li><a class="font-body-md text-body-md text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="areas-practica.html">Inmobiliario</a></li>
-                    <li><a class="font-body-md text-body-md text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="areas-practica.html">Asesoría Tributaria</a></li>
-                </ul>
-            </div>
-            <div class="md:col-span-1">
-                <h4 class="font-label-md text-label-md text-white mb-6 uppercase">Legal</h4>
-                <ul class="space-y-4">
-                    <li><a class="font-body-md text-body-md text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="nosotros.html">Declaración de Misión</a></li>
-                    <li><a class="font-body-md text-body-md text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="nosotros.html">Política de Privacidad</a></li>
-                    <li><a class="font-body-md text-body-md text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="nosotros.html">Política de Cookies</a></li>
-                </ul>
-            </div>
-            <div class="md:col-span-1">
-                <h4 class="font-label-md text-label-md text-white mb-6 uppercase">Contacto</h4>
-                <p class="font-body-md text-body-md text-outline-variant mb-2">Nueva providencia 1945 of 807</p>
-                <p class="font-body-md text-body-md text-outline-variant mb-2">Santiago, Chile</p>
-                <p class="font-body-md text-body-md text-outline-variant mb-2">+56 9 7946 3924</p>
-                <p class="font-body-md text-body-md text-outline-variant">contacto@nexumpartners.cl</p>
-            </div>
-        </div>
-        <div class="max-w-container-max-width mx-auto px-margin-desktop mt-16 pt-8 border-t border-primary-container text-center md:text-left">
-            <p class="font-label-sm text-label-sm text-outline-variant">
-                © 2026 Nexum Partners. Todos los derechos reservados. Propiedad intelectual de Chile.
-            </p>
-        </div>
-    </footer>
-
-    <!-- Form mailto handler -->
-    <script>
-        document.getElementById('contacto-form').addEventListener('submit', function(e) {
+</div>
+<div class="space-y-6">
+<h5 class="text-on-primary font-label-md text-label-md uppercase tracking-wider">Prácticas</h5>
+<ul class="space-y-3">
+<li><a class="text-secondary-fixed-dim hover:text-on-primary transition-colors font-body-md" href="areas-practica.html">Derecho Civil y Concursal</a></li>
+<li><a class="text-secondary-fixed-dim hover:text-on-primary transition-colors font-body-md" href="areas-practica.html">Cobranza Judicial</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h5 class="text-on-primary font-label-md text-label-md uppercase tracking-wider">Firma</h5>
+<ul class="space-y-3">
+<li><a class="text-secondary-fixed-dim hover:text-on-primary transition-colors font-body-md" href="nosotros.html">Misión y Visión</a></li>
+<li><a class="text-secondary-fixed-dim hover:text-on-primary transition-colors font-body-md" href="nosotros.html">Políticas de Privacidad</a></li>
+<li><a class="text-tertiary-fixed underline font-body-md" href="contacto.html">Contacto</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h5 class="text-on-primary font-label-md text-label-md uppercase tracking-wider">Oficina Central</h5>
+<p class="text-secondary-fixed-dim font-body-md">Santiago, Chile<br/>Las Condes, Distrito Financiero</p>
+<div class="flex gap-4 pt-4">
+<a class="w-10 h-10 border border-on-primary/20 rounded-full flex items-center justify-center text-on-primary hover:bg-tertiary-fixed hover:text-primary transition-all" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+<div class="max-w-container-max-width mx-auto px-margin-desktop py-8 border-t border-on-primary/5 text-center md:text-left">
+<p class="text-secondary-fixed-dim text-label-sm">© 2024 Nexum Partners. Todos los derechos reservados.</p>
+</div>
+</footer>
+<script>
+        // Form Interaction
+        document.querySelector('form').addEventListener('submit', function(e) {
             e.preventDefault();
-            var f = this;
-            var nombre = encodeURIComponent(f.nombre.value);
-            var email = encodeURIComponent(f.email.value);
-            var area = encodeURIComponent(f.area.value);
-            var mensaje = encodeURIComponent(f.mensaje.value);
-            var body = 'Nombre: ' + nombre + '%0D%0A' +
-                       'Email: ' + email + '%0D%0A' +
-                       'Área de Interés: ' + area + '%0D%0A' +
-                       'Mensaje: ' + mensaje;
-            var mailto = 'mailto:contacto@nexumpartners.cl?subject=Consulta%20Legal%20-%20' + area + '&body=' + body;
-            window.location.href = mailto;
+            const btn = this.querySelector('button[type="submit"]');
+            const originalText = btn.innerHTML;
+            
+            btn.disabled = true;
+            btn.innerHTML = `<span class="material-symbols-outlined animate-spin" data-icon="progress_activity">progress_activity</span> Enviando...`;
+            
+            setTimeout(() => {
+                btn.innerHTML = `<span class="material-symbols-outlined" data-icon="check_circle">check_circle</span> Recibido`;
+                btn.classList.replace('bg-primary', 'bg-tertiary-fixed');
+                btn.classList.replace('text-on-primary', 'text-on-tertiary-fixed');
+                
+                setTimeout(() => {
+                    this.reset();
+                    btn.disabled = false;
+                    btn.innerHTML = originalText;
+                    btn.classList.replace('bg-tertiary-fixed', 'bg-primary');
+                    btn.classList.replace('text-on-tertiary-fixed', 'text-on-primary');
+                }, 3000);
+            }, 1500);
+        });
 
-            var btn = f.querySelector('button');
-            var originalText = btn.innerHTML;
-            btn.innerHTML = '<span class="material-symbols-outlined text-[18px]">check_circle</span> ABRIENDO CLIENTE DE CORREO...';
-            btn.classList.add('opacity-80');
-            setTimeout(function() {
-                btn.innerHTML = originalText;
-                btn.classList.remove('opacity-80');
-            }, 3000);
+        // Simple Reveal on Scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
         });
     </script>
-
-</body>
-</html>
+</body></html>
