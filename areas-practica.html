@@ -107,21 +107,20 @@
         .sans-text { font-family: 'Manrope', sans-serif; }
     </style>
 </head>
-<body class="bg-surface text-on-surface selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
 <!-- TopAppBar -->
 <header class="sticky top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/30">
-<div class="flex justify-between items-center px-margin-desktop max-w-container-max-width mx-auto h-32">
-<div class="flex items-center gap-4">
-<img alt="Nexum Partners Logo" class="w-auto object-contain h-32" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdY_dtcTPwtZmg22hUSm6tYqhTQgqBw8w0N6YpcSZuVeJ802V2EUN0pOjEe8HMyQrZ6WrLtNnXuNlUCpIUu_VC_RERd7jJm5QMu3_zm_ck0-Ef0ZpzdWRCpbp_tfBZ5XICR6i4I5FLXlcORU1hNN22lGBR4JoXY5zgx5XZPS--VNE8lY2JsGTSP1Ti1efC64_XKBKfQySidYZ2pH9kXeBrTD-vl1gCBiDpDKDZIxNfxphbLPdbt4WkKgvUNIkUQK52z0WkSSRmQiOM">
-</div>
-<nav class="hidden md:flex items-center gap-12">
+<div class="flex justify-between items-center h-20 px-margin-desktop max-w-container-max-width mx-auto">
+<div class="flex items-center gap-4"><img alt="Nexum Partners Logo" class="w-auto object-contain h-32" src="assets/img/logo-header.png"></div>
+<nav class="hidden md:flex items-center gap-8">
 <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="index.html">Inicio</a>
 <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="nosotros.html">Nosotros</a>
-<a class="font-label-md text-label-md text-primary border-b border-primary pb-1" href="areas-practica.html">Áreas de Práctica</a>
+<a class="font-label-md text-label-md text-primary border-b border-primary pb-1 transition-colors duration-300" href="areas-practica.html">Áreas de Práctica</a>
 <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="contacto.html">Contacto</a>
 </nav>
-<button class="bg-primary text-on-primary px-6 py-2 font-label-md text-label-md rounded-lg hover:opacity-90 transition-all">
-                Consulta</button>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-md text-label-md hover:bg-primary-container transition-all duration-300 active:scale-95">
+                Consulta
+            </button>
 </div>
 </header>
 <main>
@@ -129,7 +128,7 @@
 <section class="relative h-[60vh] flex items-center justify-center overflow-hidden bg-primary">
 <div class="absolute inset-0 z-0">
 <div class="absolute inset-0 bg-primary/70 z-10"></div>
-<img alt="Interior de la Corte Suprema de Justicia de Chile" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0uhxNO7TayvyUkA7woBjiJouUZiZeOM1cux-j1XD7cdkyeBXmuwPoVQTuaLKVx6OCsfwIOm1q5cOiJvfjGxG3JIkhkh8EHaAayYLGSuWpt8-7cKMqUAtVJFfFssc5_00YCYIETZzMJqKb56uxnRHImEEwBJb-kK1ETuxuLMsqNGEISoiRuN10STDnIyp1a8opGeved8q3RYXWKK9zG78fX63fqE8xGxH4ocDwtqh7UappzCCL_9jsHWMAfKu">
+<img alt="Interior de la Corte Suprema de Justicia de Chile" class="w-full h-full object-cover" src="assets/img/courtroom.jpg">
 </div>
 <div class="relative z-20 text-center px-margin-desktop max-w-container-max-width mx-auto">
 <span class="font-label-sm text-label-sm text-tertiary-fixed-dim uppercase tracking-[0.2em] mb-4 block">Excelencia Jurídica</span>
@@ -189,35 +188,54 @@
 <!-- Footer -->
 <footer class="bg-primary py-16">
 <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max-width mx-auto">
-<div class="col-span-1 md:col-span-1">
-<img alt="Nexum Partners Logo" class="w-auto object-contain mb-6 h-32" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfRrhOnQVpBIM_E5EjSKfbu4hJxOTNCEv9dQeznlDNoLjo003gp97eECfqx-whiQNcNvLBaPgzjBBINRHyzHuAl3BLpVV6zVui0oESwF-3UxRIuPfzSrGLXp5-IY1VfSeXh3CPlgS3ZZVdaFD7aah1q5-phDxEBazalUIQf3up4XgoLIcN4s7k8zrY6Nj73p1q3V3BVSqgBRmb1OlVYFV1OFO6_hKipShUiwNC2T6vvnwgXV1LlqpZ-jXYjv0e9EOyIZ4ZOgqYX1-s">
-<p class="font-body-md text-body-md text-outline-variant/80 mb-6 sans-text">
-                    Compromiso con la legalidad y la excelencia estratégica en el territorio chileno.
+<!-- Brand Column -->
+<div class="md:col-span-1">
+<img alt="Nexum Partners Logo" class="w-auto object-contain h-32" src="assets/img/NexumPartnersLIGHT.png">
+<p class="font-body-md text-body-md text-on-primary-container mb-8">
+                    Elevando el estándar de la asesoría legal en la era digital chilena.
                 </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-on-primary-container flex items-center justify-center text-on-primary-container hover:text-white hover:border-white transition-colors" href="#"><span class="material-symbols-outlined text-sm">share</span></a>
+<a class="w-10 h-10 rounded-full border border-on-primary-container flex items-center justify-center text-on-primary-container hover:text-white hover:border-white transition-colors" href="#"><span class="material-symbols-outlined text-sm">groups</span></a>
 </div>
-<div>
-<h4 class="font-label-md text-label-md text-surface-bright uppercase tracking-widest mb-6">Áreas Principales</h4>
-<ul class="space-y-3">
-<li class=""><a class="font-label-sm text-label-sm text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="areas-practica.html">Derecho Civil y Concursal</a></li>
-<li class=""><a class="font-label-sm text-label-sm text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="areas-practica.html">Cobranza Judicial</a></li>
+</div>
+<!-- Links 1 -->
+<div class="md:col-span-1">
+<h4 class="font-label-md text-label-md text-white mb-6 uppercase">Práctica</h4>
+<ul class="space-y-4">
+<li class=""><a class="font-body-md text-body-md text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="areas-practica.html">Derecho Civil y Concursal</a></li>
+<li class=""><a class="font-body-md text-body-md text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="areas-practica.html">Cobranza Judicial</a></li>
 </ul>
 </div>
-<div>
-<h4 class="font-label-md text-label-md text-surface-bright uppercase tracking-widest mb-6">Institucional</h4>
-<ul class="space-y-3">
-<li class=""><a class="font-label-sm text-label-sm text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="nosotros.html">Misión y Visión</a></li>
-<li class=""><a class="font-label-sm text-label-sm text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="nosotros.html">Política de Privacidad</a></li>
+<!-- Links 2 -->
+<div class="md:col-span-1">
+<h4 class="font-label-md text-label-md text-white mb-6 uppercase">Empresa</h4>
+<ul class="space-y-4">
+<li class=""><a class="font-body-md text-body-md text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="nosotros.html">Misión y Visión</a></li>
+<li class=""><a class="font-body-md text-body-md text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="nosotros.html">Políticas de Privacidad</a></li>
+<li class=""><a class="font-body-md text-body-md text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="nosotros.html">Nuestro Equipo</a></li>
+<li class=""><a class="font-body-md text-body-md text-outline-variant hover:text-tertiary-fixed-dim transition-colors" href="nosotros.html">Carreras</a></li>
 </ul>
 </div>
-<div>
-<h4 class="font-label-md text-label-md text-surface-bright uppercase tracking-widest mb-6">Oficina Central</h4>
-<p class="font-label-sm text-label-sm text-outline-variant sans-text">Nueva providencia 1945 of 807&nbsp;<div class="">Santiago, Chile</div></p><div class="font-label-sm text-label-sm text-outline-variant sans-text uppercase tracking-widest"><br></div><p></p>
+<!-- Contact Column -->
+<div class="md:col-span-1">
+<h4 class="font-label-md text-label-md text-white mb-6 uppercase">Contacto</h4>
+<p class="font-body-md text-body-md text-on-primary-container mb-4">Nueva providencia 1945 of 807 Santiago, Chile
+                </p>
+<p class="font-body-md text-body-md text-on-primary-container mb-4">
+                    contacto@nexumpartners.cl
+                </p><p class="font-body-md text-body-md text-on-primary-container mb-4">+56 9 7946 3924</p>
+<p class="font-display-lg text-[24px] text-tertiary-fixed-dim font-headline-md"><br></p>
 </div>
 </div>
-<div class="mt-16 pt-8 border-t border-primary-container/30 px-margin-desktop max-w-container-max-width mx-auto">
-<p class="font-label-sm text-label-sm text-outline-variant/60 text-center">
-                © 2026 Nexum Partners. Todos los derechos reservados. Propiedad intelectual protegida en Chile.
+<div class="mt-16 pt-8 border-t border-primary-container px-margin-desktop max-w-container-max-width mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-label-sm text-label-sm text-outline-variant">
+                © 2026 Nexum Partners. Todos los derechos reservados. Santiago, Chile.
             </p>
+<div class="flex gap-8">
+<a class="font-label-sm text-label-sm text-outline-variant hover:text-white transition-colors" href="nosotros.html">Términos</a>
+<a class="font-label-sm text-label-sm text-outline-variant hover:text-white transition-colors" href="nosotros.html">Privacidad</a>
+</div>
 </div>
 </footer>
 <script>
