@@ -13,9 +13,12 @@ deployment:
     - /bin/cp areas-practica.html $DEPLOYPATH
     - /bin/cp contacto.html $DEPLOYPATH
     - /bin/cp nosotros.html $DEPLOYPATH
+    - /bin/cp robots.txt $DEPLOYPATH
+    - /bin/cp sitemap.xml $DEPLOYPATH
+    - /bin/cp site.webmanifest $DEPLOYPATH
     - /bin/cp -r assets $DEPLOYPATH
     - /bin/chmod 755 $DEPLOYPATH
     - /bin/chmod 644 $DEPLOYPATH/*.html
-    - /bin/chmod 644 $DEPLOYPATH/assets/css/styles.css
+    - /bin/chmod 644 $DEPLOYPATH/assets/css/*.css
     - /bin/chmod 644 $DEPLOYPATH/assets/js/config.js
     - /bin/chmod 644 $DEPLOYPATH/assets/img/* 2>/dev/null || true

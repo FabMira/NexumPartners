@@ -1,0 +1,17 @@
+{
+  "name": "nexum-partners-build",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tailwind CSS build tooling for Nexum Partners static site",
+  "scripts": {
+    "build": "tailwindcss -i src/input.css -o assets/css/tailwind.css -c tailwind.config.js --minify && tailwindcss -i src/input.css -o assets/css/tailwind-home.css -c tailwind.config.home.js --minify",
+    "build:main": "tailwindcss -i src/input.css -o assets/css/tailwind.css -c tailwind.config.js --minify",
+    "build:home": "tailwindcss -i src/input.css -o assets/css/tailwind-home.css -c tailwind.config.home.js --minify",
+    "watch": "tailwindcss -i src/input.css -o assets/css/tailwind.css -c tailwind.config.js --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0",
+    "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/container-queries": "^0.1.1"
+  }
+}
